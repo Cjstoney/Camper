@@ -4,15 +4,19 @@ import './resources.css';
 function Resources() {
   return (
     <div id="portfolio">
+
      <h2 className="text-center mt-0">Resources</h2>
      <hr className="divider my-4"></hr>
+
       <form autocomplete="off" action="/action_page.php">
         <div className="autocomplete">
             <input id="myInput" type="text" name="search" placeholder="Search.."/>
         </div>
         <input type="submit"/>
       </form>
+
     <br></br>
+
     <section>
     <div class="container-fluid p-0">
       <div class="row no-gutters">
@@ -136,6 +140,7 @@ function Resources() {
       </div>
     </div>
   </section>
+  
   </div>
   );
 }

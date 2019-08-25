@@ -5,6 +5,7 @@ import Header from './components/Header/header';
 import About from './components/About/about';
 import Services from './components/Services/services';
 import Resources from './components/Resources/resources';
+import Team from './components/Team/team';
 import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 
@@ -12,11 +13,19 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+
       <Header />
+
       <About />
+
       <Services />
+
       <Resources />
+
+      <Team />
+
       <Contact />
+
       <Footer />
       
     </div>

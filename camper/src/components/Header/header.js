@@ -10,7 +10,7 @@ function Header() {
           <hr className="divider my-4"/>
         </div>
         <div className="col-lg-8 align-self-baseline">
-          <p className="text-white-75 font-weight-light mb-5">AN ONLINE LEARNING RESOURCE FOR DEVELOPERS</p>
+          <p className="text-white-75 font-weight-light mb-5">An online learning resource for developers</p>
           <a className="btn btn-primary btn-xl js-scroll-trigger" href="#page-top">Login/Sign Up</a>
         </div>
       </div>

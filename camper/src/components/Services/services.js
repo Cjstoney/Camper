@@ -11,28 +11,28 @@ function Services() {
           <div className="mt-5">
             <i className="fas fa-4x fa-search text-primary mb-4"></i>
             <h3 className="h4 mb-2">Search</h3>
-            <p className="text-muted mb-0">AN ORGANIZED DATABASE OF DEVELOPER RESOURCES</p>
+            <p className="text-muted mb-0">An organized database of resources for developers.</p>
           </div>
         </div>
         <div className="col-lg-3 col-md-6 text-center">
           <div className="mt-5">
             <i className="fas fa-4x fa-save text-primary mb-4"></i>
             <h3 className="h4 mb-2">Save</h3>
-            <p className="text-muted mb-0">EASILY SAVE THE RESOURCES THAT YOU FIND MOST VALUABLE</p>
+            <p className="text-muted mb-0">Easily save the resources you find most valuable.</p>
           </div>
         </div>
         <div className="col-lg-3 col-md-6 text-center">
           <div className="mt-5">
             <i className="fas fa-4x fa-laptop-code text-primary mb-4"></i>
             <h3 className="h4 mb-2">Review</h3>
-            <p className="text-muted mb-0">USER REVIEWS HELP YOU EASILY IDENTIFY THE BEST RESOURCES FOR YOUR PROJECT</p>
+            <p className="text-muted mb-0">User reviews help you identify the best resources for your project.</p>
           </div>
         </div>
         <div className="col-lg-3 col-md-6 text-center">
           <div className="mt-5">
             <i className="fas fa-4x fa-heart text-primary mb-4"></i>
             <h3 className="h4 mb-2">Open Source</h3>
-            <p className="text-muted mb-0">VISIT OUR GITHUB IF YOU'D LIKE TO CONTRIBUTE TO THIS PROJECT</p>
+            <p className="text-muted mb-0">Visit our GitHub if you'd like to contribute to this project.</p>
           </div>
         </div>
       </div>
