@@ -8,7 +8,7 @@ import Footer from './components/Footer/footer';
 function Login() {
     return (
         <section className="Login" id="Login">
-            <Navbar />
+           
             <Header />
             <Resources />
 
