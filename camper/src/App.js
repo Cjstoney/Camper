@@ -8,6 +8,8 @@ import Resources from './components/Resources/resources';
 import Team from './components/Team/team';
 import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
