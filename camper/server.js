@@ -13,6 +13,6 @@ app.use(express.json());
 app.use('/api')
 
 
-app.get('/eampless', function(req, res){
+app.get('/examples', function(req, res){
     res.send('What up yall')
 })
