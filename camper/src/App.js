@@ -10,6 +10,7 @@ import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 import logo from './logo.svg';
 import './App.css';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
