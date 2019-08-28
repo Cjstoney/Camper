@@ -10,9 +10,8 @@ function ResourcesPage() {
         <section className="Login" id="Login">
             <Navbar />
             <Header />
+            {/* <Card />  */}
             <Resources />
-
-
             <Footer />
         </section>
     )
