@@ -11,7 +11,7 @@ function Header() {
         </div>
         <div className="col-lg-8 align-self-baseline">
           <p className="text-white-75 font-weight-light mb-5">An online learning resource for developers</p>
-          <a className="btn btn-primary btn-xl js-scroll-trigger" href="#page-top">Login/Sign Up</a>
+          <a className="btn btn-primary btn-xl js-scroll-trigger" href="/login">Login/Sign Up</a>
         </div>
       </div>
     </div>
