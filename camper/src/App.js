@@ -10,37 +10,32 @@ import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 // import logo from './logo.svg';
 import './App.css';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
-import Login from "./pages/LoginPage";
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+import LoginPage from "./pages/LoginPage";
+// import Resources from "./pages/ResourcesPage";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-
-      <Header />
-
-      <About />
-
-      <Services />
-
-      <Resources />
-
-      <Team />
-
-      <Contact />
-
-      <Footer />
-      
       <Router>
-      <div>
-        <Route exact path="/" component={App} />
-        <Route path="/login" component={Login} />
-        {/* <Route path="/contact" component={Contact} /> */}
+    <div className="App">
+      
+    <div>
+        {/* <Route exact path="/" component={} /> */}
+        <Route path="/login" component={LoginPage} /> 
+        <Route path="/resources" component={Resources} />
       </div>
-    </Router>
+<Route exact path="/" component={Navbar} />
+<Route exact path="/" component={Header} />
+<Route exact path="/" component={About} />
+<Route exact path="/" component={Services} />
+<Route exact path="/" component={Resources} />
+<Route exact path="/" component={Team} />
+<Route exact path="/" component={Contact} />
+<Route exact path="/" component={Footer} />
+    
 
     </div>
+    </Router>
   );
 }
 
