@@ -14,27 +14,25 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import LoginPage from "./pages/LoginPage";
 // import Resources from "./pages/ResourcesPage";
 
+
+//hi guys, please keep all fo this below. its how we renger the "non-logged-in page" without 
+//having to render ALL of these components on every single page (ie, LoginPage, ResourcesPage, etc. ty-Sam)
+
 function App() {
   return (
-      <Router>
-    <div className="App">
-      
-    <div>
-        {/* <Route exact path="/" component={} /> */}
-        <Route path="/login" component={LoginPage} /> 
+    <Router>
+      <div className="App">
+        <Route path="/login" component={LoginPage} />
         <Route path="/resources" component={Resources} />
+        <Route exact path="/" component={Navbar} />
+        <Route exact path="/" component={Header} />
+        <Route exact path="/" component={About} />
+        <Route exact path="/" component={Services} />
+        <Route exact path="/" component={Resources} />
+        <Route exact path="/" component={Team} />
+        <Route exact path="/" component={Contact} />
+        <Route exact path="/" component={Footer} />
       </div>
-<Route exact path="/" component={Navbar} />
-<Route exact path="/" component={Header} />
-<Route exact path="/" component={About} />
-<Route exact path="/" component={Services} />
-<Route exact path="/" component={Resources} />
-<Route exact path="/" component={Team} />
-<Route exact path="/" component={Contact} />
-<Route exact path="/" component={Footer} />
-    
-
-    </div>
     </Router>
   );
 }
