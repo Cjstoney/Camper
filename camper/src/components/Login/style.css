@@ -1,6 +1,7 @@
 Form {
 margin: 0 auto;
-padding: 200px 100px 20px 100px;
+padding-top: 1rem;
+padding-bottom: 1rem;
 max-width: 50%;
 text-align: center;
 }

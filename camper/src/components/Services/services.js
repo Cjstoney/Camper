@@ -32,7 +32,7 @@ function Services() {
           <div className="mt-5">
             <i className="fas fa-4x fa-heart text-primary mb-4"></i>
             <h3 className="h4 mb-2">Open Source</h3>
-            <p className="text-muted mb-0">Visit our GitHub if you'd like to contribute to this project.</p>
+            <p className="text-muted mb-0">Visit our <a href="https://github.com/Cjstoney/Camper" target="_blank" rel="noopener noreferrer">GitHub</a> if you'd like to contribute to this project.</p>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import './resources.css';
 
 function Resources() {
   return (
-    <div id="portfolio">
+    <div className="page-section" id="portfolio">
 
      <h2 className="text-center mt-0">Resources</h2>
      <hr className="divider my-4"></hr>
@@ -28,7 +28,7 @@ function Resources() {
                 HTML
               </div>
               <div class="project-name">
-                Learn about HTML
+                <p>Learn about HTML</p>
               </div>
             </div>
           </a>
@@ -41,7 +41,7 @@ function Resources() {
                 CSS
               </div>
               <div class="project-name">
-                Learn about CSS
+                <p>Learn about CSS</p>
               </div>
             </div>
           </a>
@@ -54,7 +54,7 @@ function Resources() {
                 JavaScript
               </div>
               <div class="project-name">
-                Learn about JavaScript
+                <p>Learn about JavaScript</p>
               </div>
             </div>
           </a>
@@ -67,7 +67,7 @@ function Resources() {
                 jQuery
               </div>
               <div class="project-name">
-                Learn about jQuery
+                <p>Learn about jQuery</p>
               </div>
             </div>
           </a>
@@ -80,7 +80,7 @@ function Resources() {
                 Node JS
               </div>
               <div class="project-name">
-                Learn about Node JS
+                <p>Learn about Node JS</p>
               </div>
             </div>
           </a>
@@ -93,7 +93,7 @@ function Resources() {
                 MySQL
               </div>
               <div class="project-name">
-                Learn about MySQL
+                <p>Learn about MySQL</p>
               </div>
             </div>
           </a>
@@ -106,7 +106,7 @@ function Resources() {
                 Express JS
               </div>
               <div className="project-name">
-                Learn About Express JS
+                <p>Learn about Express JS</p>
               </div>
             </div>
           </a>
@@ -119,7 +119,7 @@ function Resources() {
                 React
               </div>
               <div className="project-name">
-                Learn About React
+                <p>Learn about React</p>
               </div>
             </div>
           </a>
@@ -132,7 +132,7 @@ function Resources() {
                 MongoDB
               </div>
               <div className="project-name">
-                Learn About MongoDB
+                <p>Learn about MongoDB</p>
               </div>
             </div>
           </a>
