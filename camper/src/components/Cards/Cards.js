@@ -27,6 +27,7 @@ return this.state.data.map(resource =>
 
     render(){
         return(
+          //bla bla keep this//
           <div className="cardDiv">
             <div class="row">
         {this.renderCards()}
