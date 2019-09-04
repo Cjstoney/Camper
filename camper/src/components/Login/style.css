@@ -1,7 +1,7 @@
 Form {
-/* margin: 20px 20px 20px 20px; */
+margin: 0 auto;
 padding: 200px 100px 20px 100px;
 max-width: 50%;
-/* align-content: center; */
-/* HOW DO I CENTER SHIT? */
+text-align: center;
+
 }
