@@ -1,7 +1,7 @@
 import React from "react";
 // import './App.css';
 import Navbar from '../components/Navbar/navbar';
-import Header from '../components/Header/header';
+import Cards from "../components/Cards/Cards"
 // import Resources from './components/Resources/resources';
 import Footer from '../components/Footer/footer';
 
@@ -9,8 +9,7 @@ function ResourcesPage() {
     return (
         <section className="Login" id="Login">
             <Navbar />
-            <Header />
-            {/* <Card />  */}
+            <Cards /> 
             {/* <Resources /> */}
             <Footer />
         </section>
