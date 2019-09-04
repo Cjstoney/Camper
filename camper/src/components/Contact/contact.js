@@ -12,12 +12,12 @@ function Contact() {
         </div>
         <div className="row">
             <div className="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-            <i className="fab fa-github fa-3x mb-3 text-muted"></i>
+            <i className="fab fa-github fa-3x mb-3"></i>
             <a className="d-block" href="https://github.com/Cjstoney/Camper">Github</a>
             </div>
             <div className="col-lg-4 mr-auto text-center">
-            <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
-            <a className="d-block" href="mailto:support@camper.com">support@camper.com</a>
+            <i className="fas fa-envelope fa-3x mb-3"></i>
+            <a className="d-block" href="mailto:aeldenburg@gmail.com">Support</a>
             </div>
         </div>
         </div>
