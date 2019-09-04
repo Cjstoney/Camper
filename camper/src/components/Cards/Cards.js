@@ -18,7 +18,7 @@ return this.state.data.map(resource =>
   <Card.Body>
     <Card.Title>{resource.title}</Card.Title>
     <Card.Text>{resource.desc}</Card.Text>
-    <Button variant="primary" href={resource.link}>Check It Out</Button>
+    <Button variant="primary" href={resource.link}>Learn It!</Button>
   </Card.Body>
 </Card>
 
@@ -27,6 +27,7 @@ return this.state.data.map(resource =>
 
     render(){
         return(
+          //bla bla keep this//
           <div className="cardDiv">
             <div class="row">
         {this.renderCards()}

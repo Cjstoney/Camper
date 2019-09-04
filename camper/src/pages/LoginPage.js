@@ -4,6 +4,7 @@ import Footer from '../components/Footer/footer';
 import Login from "../components/Login/Login";
 
 
+
 function LoginPage() {
     return (
         <section className="Login" id="Login">
@@ -18,4 +19,4 @@ function LoginPage() {
 export default LoginPage;
 
 
-//sam make a css w/ vH 
+//sam make a css w/ vH , sticky footer, 

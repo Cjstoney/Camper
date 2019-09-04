@@ -1,16 +1,15 @@
 import React from "react";
-// import './App.css';
 import Navbar from '../components/Navbar/navbar';
 import Cards from "../components/Cards/Cards"
-// import Resources from './components/Resources/resources';
 import Footer from '../components/Footer/footer';
+
+
 
 function ResourcesPage() {
     return (
-        <section className="Login" id="Login">
+        <section className="ResourcesClass" id="ResourcesClass">
             <Navbar />
             <Cards /> 
-            {/* <Resources /> */}
             <Footer />
         </section>
     )
