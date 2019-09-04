@@ -2,21 +2,36 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import "./style.css";
+import data from "../../Data/html";
+
 
 class Cards extends React.Component{
-    render(){
-        return(
-            <Card style={{ width: '20rem', margin: '100px 0px 20px 50px' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  state= {
+    data
+  }
+
+  renderCards = () => {
+return this.state.data.map(resource =>
+
+    <Card style={{ width: '10rem', margin: '100px 0px 20px 50px' }}>
+  <Card.Img style={{maxHeight: '200px'}} variant="top" src={resource.img} />
   <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Card.Title>{resource.title}</Card.Title>
+    <Card.Text>{resource.desc}</Card.Text>
+    <Button variant="primary" href={resource.link}>Check It Out</Button>
   </Card.Body>
 </Card>
+
+)
+  }
+
+    render(){
+        return(
+          <div className="cardDiv">
+            <div class="row">
+        {this.renderCards()}
+        </div>
+        </div>
         )
     }
 }
