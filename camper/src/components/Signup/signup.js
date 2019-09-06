@@ -6,20 +6,20 @@ import Button from "react-bootstrap/Button";
 
 function Signup() {
     return (
-        <div className="signupdiv" style={{ marginTop: '100px' }}>
+        <div className="signupdiv">
 
             <Form>
                 <h1>Sign Up!</h1>
                 <Col>
-                    <Form.Control placeholder="First name" />
+                    <Form.Control style={{marginBottom:'50px'}} placeholder="First name" />
                 </Col>
                 <Col>
-                    <Form.Control placeholder="Username (anything you desire)" />
+                    <Form.Control style={{marginBottom:'50px'}} placeholder="Username (anything you desire)" />
                 </Col>
                 {/* <Form.Group controlId="formGroupEmail"> */}
                 <Form.Control type="email" placeholder="Enter email" />
                 {/* </Form.Group> */}
-                <Button variant="primary" type="submit">Submit</Button>
+                <Button style={{marginTop:'10px'}} variant="primary" type="submit">Submit</Button>
             </Form>
         </div>
 
