@@ -13,6 +13,7 @@ app.use(express.json());
 app.use('/api')
 
 
+
 app.get('/examples', function(req, res){
     res.send('What up yall')
 })
