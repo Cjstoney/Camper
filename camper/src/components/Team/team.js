@@ -24,40 +24,55 @@ function Team() {
                         <div className="carousel-caption d-none d-md-block">
                         </div>
                         <br></br>
+                        <a href="https://github.com/bernardericschubert" target="_blank" rel="noopener noreferrer">
                         <h5>Eric Schubert</h5>
+                        </a>
                         <p>Bio goes here.</p>
+                      
                     </div>
                     <div className="carousel-item">
                         <img src="https://avatars2.githubusercontent.com/u/48971375?s=460&v=4" className="d-block w-100" alt="andrew"/>
                         <div className="carousel-caption d-none d-md-block">
                         </div>
                         <br></br>
+                        <a href="https://github.com/aeldenburg001" target="_blank" rel="noopener noreferrer">
                         <h5>Andrew Eldenburg</h5>
+                        </a>
                         <p>Full stack web developer with a passion for making even the most complex things simple to understand and easy to use.</p>
+                        
                     </div>
                     <div className="carousel-item">
                         <img src="https://avatars2.githubusercontent.com/u/48640035?s=460&v=4" className="d-block w-100" alt="camerone"/>
                         <div className="carousel-caption d-none d-md-block">
                         </div>
                         <br></br>
+                        <a href="https://github.com/Cjstoney" target="_blank" rel="noopener noreferrer">
                         <h5>Camerone Stoney</h5>
+                        </a>
                         <p>Full-Stack Web Developer, experienced supervisor and creative thinker.</p>
+                        
                     </div>
                     <div className="carousel-item">
                         <img src="https://media.licdn.com/dms/image/C5603AQFDEDVj1tRd8A/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=LPVeMCfkVSwrwu1d6aNWUt0oR1k2RjN2fbMJ6vb5QLk" className="d-block w-100" alt="cruz"/>
                         <div className="carousel-caption d-none d-md-block">
                         </div>
                         <br></br>
+                        <a href="https://github.com/Cruzerman90" target="_blank" rel="noopener noreferrer">
                         <h5>Cruz Morgan</h5>
+                        </a>
                         <p>Bio goes here.</p>
+                        
                     </div>
                     <div className="carousel-item">
                         <img src="https://avatars1.githubusercontent.com/u/17563089?s=460&v=4" className="d-block w-100" alt="sam"/>
                         <div className="carousel-caption d-none d-md-block">
                         </div>
                         <br></br>
+                        <a href="https://github.com/samanthalossett" target="_blank" rel="noopener noreferrer">
                         <h5>Samantha Lossett</h5>
+                        </a>
                         <p>I am currently working towards my certificate in Full-Stack web development at the University of Oregon.</p>
+                        
                     </div>
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
