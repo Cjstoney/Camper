@@ -13,7 +13,7 @@ import './App.css';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import LoginPage from "./pages/LoginPage";
 import ResourcesPage from "./pages/ResourcesPage";
-
+import SignUpPage from "./pages/SignUpPage";
 
 
 //hi guys, please keep all fo this below. its how we renger the "non-logged-in page" without 
@@ -25,6 +25,7 @@ function App() {
       <div className="App">
         <Route path="/login" component={LoginPage} />
         <Route path="/resources" component={ResourcesPage} />
+        <Route path="/signup" component={SignUpPage} />
        
         <Route exact path="/" component={Navbar} />
         <Route exact path="/" component={Header} />
