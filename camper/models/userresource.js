@@ -1,4 +1,4 @@
-/* module.exports = function(sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   const UserResource = sequelize.define("User_Resource", {
     user_id: {
       type: DataTypes.INTEGER,
@@ -10,4 +10,4 @@
     }
   });
   return UserResource;
-}; */
+};

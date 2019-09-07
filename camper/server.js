@@ -4,7 +4,7 @@ const path= require('path');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-const apiRoutes = require('./apiRoute/route');
+const apiRoutes = require('./routes/apiRoutes');
 const db = require('./models');
 
 // middleware
@@ -29,12 +29,5 @@ db.sequelize.sync(syncOptions).then(function() {
     );
   });
 });
-
-/* // get route for the sql database goes here
-app.use('/api')
-
-app.get('/examples', function(req, res){
-    res.send('What up yall')
-}) */
 
 module.exports = app;
