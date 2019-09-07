@@ -1,13 +1,21 @@
-const Sequelize = require('sequelize')
-
-const Resource = sequelize.define('resource', {
-    resource_id: Sequelize.INTEGER,
-    technology: Sequelize.STRING,
-    tag: Sequelize.STRING,
-    description: Sequelize.STRING,
-    url:Sequelize.STRING
-})
-
-Resource.sync()
-
-module.exports = Resource
+module.exports = function(sequelize, DataTypes) {
+    const Resource = sequelize.define("Resource", {
+      technology: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      tag: {
+        type: DataTypes.STRING,
+        allowNull: true
+      },
+      description: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      url: {
+        type: DataTypes.STRING,
+        allowNull: false
+      }
+    });
+    return Resource;
+};

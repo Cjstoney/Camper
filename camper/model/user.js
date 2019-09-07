@@ -1,12 +1,17 @@
-const Sequelize = require("sequelize");
-
-const User = sequelize.define('resource', {
-    user_id: Sequelize.INTEGER, 
-    name: Sequelize.STRING, 
-    email: Sequelize.STRING, 
-    password: Sequelize.STRING
-})
-
-User.sync()
-
-module.exports = User;
+module.exports = function(sequelize, DataTypes) {
+    const User = sequelize.define("User", {
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      password: {
+        type: DataTypes.STRING,
+        allowNull: false
+      }
+    });
+    return User;
+};
