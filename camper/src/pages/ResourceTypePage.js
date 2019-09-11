@@ -7,9 +7,19 @@ import Footer from '../components/Footer/footer';
 
 
 class ResourceTypePage extends React.Component {
+    state={
+        id: null
+    }
+
     componentDidMount(){
-        console.log(this.props)
-        let id = this.props.match.params
+        let id = this.props.match.params.ResourceTypePage;
+        console.log(id)
+
+        this.setState({
+            id: id
+        })
+
+
     }
 
 
@@ -19,6 +29,8 @@ class ResourceTypePage extends React.Component {
         return (
             <section className="ResourcesClass" id="ResourcesClass">
                 <Navbar />
+                
+                <h1 style={{margin: '100px'}}>{this.state.id}</h1>
                 {/* <Cards /> */}
                 <Footer />
             </section>
