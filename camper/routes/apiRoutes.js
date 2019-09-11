@@ -3,14 +3,12 @@
 /* eslint-disable indent */
 /* eslint-disable camelcase */
 const db = require("../models");
-const sessionChecker = require("./../public/G6-HTML/js/sessionChecker");
-​
+// const sessionChecker = require("./../public/G6-HTML/js/sessionChecker");
 module.exports = function(app) {
   // ========= CREATE ==========
   app.get("/api/currentUser", (req, res) => {
     res.json(req.session.user);
   });
-​
   app.post("/api/assign", function(req, res) {
     let newAsset = req.body;
     let newAssetAssignment = {};
@@ -43,18 +41,15 @@ module.exports = function(app) {
         });
     }
   });
-​
   app.post("/api/register", (req, res) => {
     let newUser = req.body;
     db.User.create(newUser).then(dbUser => {
       res.json(dbUser);
     });
   });
-​
   app.post("/api/add", (req, res) => {
     let formInfo = req.body;
     console.log(req.body);
-​
     // get type of asset being added
     switch (formInfo.assetType) {
       case "Hardware":
@@ -103,7 +98,6 @@ module.exports = function(app) {
         console.log("No assets added");
     }
   });
-​
   app.post("/api/request", (req, res) => {
     let newRequest = req.body;
     console.log(newRequest);
@@ -111,7 +105,6 @@ module.exports = function(app) {
       res.json(dbUser);
     });
   });
-​
   app
     .route("/api/login")
     .get(sessionChecker, (req, res) => {
@@ -120,7 +113,6 @@ module.exports = function(app) {
     .post((req, res) => {
       let username = req.body.username;
       let password = req.body.password;
-​
       db.User.findOne({ where: { username: username } }).then(function(user) {
         if (!user) {
           res.json("/");
@@ -136,16 +128,13 @@ module.exports = function(app) {
           }
         }
       });
-​
       // =========== READ ==============
-​
       // Get all 
       app.get("/api/all-resources", function(req, res) {
         db.Resouce.findAll().then(function(results) {
           res.json(results);
         });
       });
-​
       // ========= Get Specific Type Of Resource ==========
       app.get("/api/resource/:type", function(req, res) {
         db.Resource.findAll({ where: { type: req.params.type } }).then(function(
@@ -154,15 +143,12 @@ module.exports = function(app) {
           res.json(results);
         });
       });
-​
-
       //======= Get User =============
       app.get("/api/user/:user-id", function(req, res) {
         db.User.findOne({where: { name: req.params.name } }).then(function(results) {
           res.json(results);
         });
       });
-​
       app.get("/api/recent-accessories", function(req, res) {
         db.Accessory.findAll({ order: ["updatedAt"], limit: 5 }).then(function(
           results
@@ -170,7 +156,6 @@ module.exports = function(app) {
           res.json(results);
         });
       });
-​
       app.get("/api/user-accessories/:id", function(req, res) {
         db.Accessory.findOne({ where: { id: req.params.id } }).then(function(
           results
@@ -178,7 +163,6 @@ module.exports = function(app) {
           res.json(results);
         });
       });
-​
       app.get("/api/user-accessories-ids/:id", function(req, res) {
         db.User_Accessory.findAll({ where: { user_id: req.params.id } }).then(
           function(results) {
@@ -186,14 +170,12 @@ module.exports = function(app) {
           }
         );
       });
-​
       // Get all hardware
       app.get("/api/all-hardware", function(req, res) {
         db.Hardware.findAll().then(function(results) {
           res.json(results);
         });
       });
-​
       app.get("/api/recent-hardware", function(req, res) {
         db.Hardware.findAll({ order: ["updatedAt"], limit: 5 }).then(function(
           results
@@ -201,7 +183,6 @@ module.exports = function(app) {
           res.json(results);
         });
       });
-​
       app.get("/api/user-hardware/:id", function(req, res) {
         db.Hardware.findOne({ where: { id: req.params.id } }).then(function(
           results
@@ -209,7 +190,6 @@ module.exports = function(app) {
           res.json(results);
         });
       });
-​
       app.get("/api/user-hardware-ids/:id", function(req, res) {
         db.User_Hardware.findAll({ where: { user_id: req.params.id } }).then(
           function(results) {
@@ -217,14 +197,12 @@ module.exports = function(app) {
           }
         );
       });
-​
       // Get all software
       app.get("/api/all-software", function(req, res) {
         db.Software.findAll().then(function(results) {
           res.json(results);
         });
       });
-​
       app.get("/api/recent-software", function(req, res) {
         db.Software.findAll({ order: ["updatedAt"], limit: 5 }).then(function(
           results
@@ -232,7 +210,6 @@ module.exports = function(app) {
           res.json(results);
         });
       });
-​
       app.get("/api/user-software/:id", function(req, res) {
         db.Software.findOne({ where: { id: req.params.id } }).then(function(
           results
@@ -240,7 +217,6 @@ module.exports = function(app) {
           res.json(results);
         });
       });
-​
       app.get("/api/user-software-ids/:id", function(req, res) {
         db.User_Software.findAll({ where: { user_id: req.params.id } }).then(
           function(results) {
@@ -248,7 +224,6 @@ module.exports = function(app) {
           }
         );
       });
-​
       app.get("/api/logout", (req, res) => {
         if (req.session.user && req.cookies.user_sid) {
           res.clearCookie("user_sid");
@@ -257,11 +232,8 @@ module.exports = function(app) {
           res.json("/");
         }
       });
-​
       // =========== UPDATE ==============
-​
       // =========== DELETE ==============
-​
       // Delete an example by id
       app.delete("/api/delete/user/:id", function(req, res) {
         db.User.destroy({ where: { id: req.params.id } }).then(function(
