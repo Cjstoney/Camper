@@ -18,26 +18,32 @@ class ResourceTypePage extends React.Component {
 
     componentDidMount() {
         let id = this.props.match.params.ResourceTypePage;
-        console.log(id)
+        // console.log(id)
         axios.get("http://localhost:3001/api/resource/" + id)
             .then(res => {
                 this.setState({
                     post: res.data
                 })
-                console.log(this.state.post)
+                // console.log(this.state.post)
                 // console.log(res.data)
             })
     }
     render() {
-        // console.log(this.state.post.technology)
-        const post = this.state.post ? (
+        console.log(this.state.post)
+        let post = this.state.post ? (
             <div className="post">
                 {
-                    <div style={{ margin: '100px' }}>
-                        <a href={this.state.post[0].url}><h1>{this.state.post[0].technology}</h1>
-                            <h2>{this.state.post[0].description}</h2>
-                        </a>
-                    </div>
+                    this.state.post.map(function (technology, description, url) {
+
+                        return (
+
+                            <div style={{ margin: '100px' }}>
+                                <a href={post.url}><h1>{post.technology}</h1>
+                                    <h2>{post.description}</h2>
+                                </a>
+                            </div>
+                        )
+                    })
                 }
             </div>
         ) : (
