@@ -32,11 +32,10 @@ class ResourceTypePage extends React.Component {
             // console.log(this.state.post.technology)
             const post = this.state.post ? (
                 <div className="post">
-                    <h1>Will this show up?</h1>
-                    <h1 >{this.state.post.id}</h1>
+                   { <h1 style={{margin: '100px'}}>{this.state.post[0].technology}</h1>}
                 </div>
             ) : (
-                    <h1>nothing to see here</h1>)
+                    <h1 >nothing to see here</h1>)
 
             return (
                 <section className="ResourcesClass" id="ResourcesClass">
