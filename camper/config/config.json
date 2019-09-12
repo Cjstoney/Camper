@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "bootcamp",
+    "password": "Password",
     "database": "camper",
     "host": "localhost",
     "dialect": "mysql"
