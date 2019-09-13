@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from '../components/Navbar/navbar';
-import { Card, Button } from 'react-bootstrap/Card';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import Footer from '../components/Footer/footer';
 import axios from 'axios';
+// import html
 
 
 
@@ -35,13 +37,20 @@ class ResourceTypePage extends React.Component {
                 {
                     this.state.post.map(function (e, idx, arr) {
                         console.log(e)
+                        
                         return (
+                            <div className='resourceCardContainer'>
 
-                            <div key={e.id} style={{ margin: '100px' }}>
-                                <a href={e.url}><h1>{e.technology}</h1>
-                                    <h2>{e.description}</h2>
-                                </a>
+                            <Card key={e.id}style={{ width: '10rem', margin: '100px 0px 20px 50px' }}>
+                                {/* <Card.Img style={{maxHeight: '200px'}} variant="top" src={resource.img} /> */}
+                                <Card.Body>
+                                    <Card.Title>{e.technology}</Card.Title>
+                                    <Card.Text>{e.description}</Card.Text>
+                                    <Button variant="primary" href={e.url}>Learn It!</Button>
+                                </Card.Body>
+                            </Card>
                             </div>
+
                         )
                     })
                 }
@@ -52,7 +61,7 @@ class ResourceTypePage extends React.Component {
         return (
             <section className="ResourcesClass" id="ResourcesClass">
                 <Navbar />
-                <div>
+                <div className='resourceCardContainer'>
                     {
                         post
                     }

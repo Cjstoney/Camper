@@ -21,6 +21,8 @@ module.exports = function(app) {
           res.json(results);
         });
       });
+
+      
       // ========= Get Specific Type Of Resource ==========
       app.get("/api/resource/:type", function(req, res) {
         db.Resource.findAll({ where: { technology: req.params.type } }).then(function(
@@ -30,6 +32,23 @@ module.exports = function(app) {
           res.json(results);
         });
       });
+
+      // ======== POST NEW USER ========
+      app.post('/api/newuser', function(req, res){
+        console.log(req.body)
+        db.User.create({
+          name: req.body.name,
+          email: req.body.name,
+          password: req.body.password,
+          createdAt: req.body.createdAt
+        }).then(function(results){
+          console.log("user added")
+          res.end()
+        })
+      })
+
+
+
       //======= Get User =============
       app.get("/api/user/:user-id", function(req, res) {
         db.User.findOne({where: { name: req.params.name } }).then(function(results) {
