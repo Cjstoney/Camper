@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Footer from '../components/Footer/footer';
 import axios from 'axios';
+import './ResourceTypePage.css'
 // import html
 
 
@@ -39,9 +40,9 @@ class ResourceTypePage extends React.Component {
                         console.log(e)
                         
                         return (
-                            <div className='resourceCardContainer'>
+                            
 
-                            <Card key={e.id}style={{ width: '10rem', margin: '100px 0px 20px 50px' }}>
+                            <Card key={e.id}style={{ width: '100%' }}>
                                 {/* <Card.Img style={{maxHeight: '200px'}} variant="top" src={resource.img} /> */}
                                 <Card.Body>
                                     <Card.Title>{e.technology}</Card.Title>
@@ -49,7 +50,7 @@ class ResourceTypePage extends React.Component {
                                     <Button variant="primary" href={e.url}>Learn It!</Button>
                                 </Card.Body>
                             </Card>
-                            </div>
+                            
 
                         )
                     })
