@@ -37,11 +37,7 @@ class ResourceTypePage extends React.Component {
                 {
                     this.state.post.map(function (e, idx, arr) {
                         console.log(e)
-                        // const img = () => {
-                        //     if (e.technology === "css") {
-                        //         "src = other
-                        //     }
-                        // }
+                        
                         return (
                             <div className='resourceCardContainer'>
 
@@ -55,13 +51,6 @@ class ResourceTypePage extends React.Component {
                             </Card>
                             </div>
 
-
-                            // <div key={e.id} style={{ margin: '100px' }}>
-                            //     {/* <img src={img} class="" /> */}
-                            //     <a href={e.url}><h1>{e.technology}</h1>
-                            //         <h2>{e.description}</h2>
-                            //     </a>
-                            // </div>
                         )
                     })
                 }
