@@ -33,13 +33,13 @@ class ResourceTypePage extends React.Component {
         let post = this.state.post ? (
             <div className="post">
                 {
-                    this.state.post.map(function (technology, description, url) {
-
+                    this.state.post.map(function (e, idx, arr) {
+                        console.log(e)
                         return (
 
-                            <div style={{ margin: '100px' }}>
-                                <a href={post.url}><h1>{post.technology}</h1>
-                                    <h2>{post.description}</h2>
+                            <div key={e.id} style={{ margin: '100px' }}>
+                                <a href={e.url}><h1>{e.technology}</h1>
+                                    <h2>{e.description}</h2>
                                 </a>
                             </div>
                         )
