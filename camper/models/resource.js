@@ -15,6 +15,10 @@ module.exports = function(sequelize, DataTypes) {
       url: {
         type: DataTypes.STRING,
         allowNull: false
+      },
+      imgurl: {
+        type: DataTypes.STRING,
+        allowNull: true
       }
     });
     return Resource;
