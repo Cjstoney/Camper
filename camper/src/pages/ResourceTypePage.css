@@ -1,0 +1,10 @@
+/* .resourceCardContainer{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+} */
+
+.post{
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    padding-top: 100px;
+}

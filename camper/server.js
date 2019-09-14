@@ -4,7 +4,8 @@ const path= require('path');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-const apiRoutes = require('./routes/apiRoutes');
+// app.use(express.static(_dirname+"/public"))
+// const apiRoutes = require('./routes/apiRoutes');
 const db = require('./models');
 
 // middleware
@@ -18,6 +19,10 @@ var syncOptions = { force: false };
 if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
+
+// Routes
+// ======================================
+require('./routes/apiRoutes')(app);
 
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
