@@ -1,9 +1,7 @@
-// route to the get api will go here.
 
-/* eslint-disable indent */
-/* eslint-disable camelcase */
 const db = require("../models");
-// const sessionChecker = require("./../public/G6-HTML/js/sessionChecker");
+const Op = Sequelize.Op;
+
 module.exports = function(app) {
   app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // update to match the domain you will make the request from
@@ -26,6 +24,34 @@ module.exports = function(app) {
       // ========= Get Specific Type Of Resource ==========
       app.get("/api/resource/:type", function(req, res) {
         db.Resource.findAll({ where: { technology: req.params.type } }).then(function(
+          results
+          ) {
+          console.log(res);
+          res.json(results);
+        });
+      });
+
+      // ========= Get Resource via search ==========
+      app.get("/api/resource/search", function(req, res) {
+        db.Resource.findAll({ where: { 
+            [Op.or]: [
+              {
+                technology: {
+                  [Op.like]: req.params.type //NEEDS UPDATE
+                }
+              },
+              {
+                tag: {
+                  [Op.like]: req.params.type //NEEDS UPDATE
+                }
+              },
+              {
+                description: {
+                  [Op.like]: req.params.type //NEEDS UPDATE
+                }
+              }
+            ]
+          } }).then(function(
           results
           ) {
           console.log(res);
