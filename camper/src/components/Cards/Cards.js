@@ -10,8 +10,7 @@ class Cards extends React.Component{
     data
   }
 
-  
-  renderCards = () => {    
+  renderCards = () => {
 return this.state.data.map(resource =>
 
     <Card style={{ width: '10rem', margin: '100px 0px 20px 50px' }}>
@@ -22,7 +21,6 @@ return this.state.data.map(resource =>
     <Button variant="primary" href={resource.link}>Learn It!</Button>
   </Card.Body>
 </Card>
-
 )
   }
 
@@ -30,7 +28,7 @@ return this.state.data.map(resource =>
         return(
           //bla bla keep this//
           <div className="cardDiv">
-            <div className="row">
+            <div class="row">
         {this.renderCards()}
         </div>
         </div>
