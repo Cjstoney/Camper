@@ -13,6 +13,11 @@ var html= [
         desc: "how to use html",
         type: "Blog",
         img: "https://cdn1.iconfinder.com/data/icons/logotypes/32/blogger-256.png"
+        //w3 icon: https://cdn1.iconfinder.com/data/icons/social-media-vol-2/24/_w3-512.png
+        // game icon: https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/gamecontroller-512.png
+        //npm icon: https://cdn4.iconfinder.com/data/icons/vector-brand-logos/40/NPM-512.png
+        
+
     },
     {
         title: "How To Enable HTML5 On Youtube",

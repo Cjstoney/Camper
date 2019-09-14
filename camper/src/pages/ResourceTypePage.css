@@ -6,5 +6,11 @@
 .post{
     display:grid;
     grid-template-columns:  1fr 1fr 1fr;
-    padding-top: 100px;
+    padding: 100px 20px 20px 20px;
+}
+
+.mainCard{
+    /* padding: 50px 20px 20px 20px; */
+    margin: 0px 10px 20px 30px;
+    box-shadow: 5px 10px 10px #bbb9b9;
 }
