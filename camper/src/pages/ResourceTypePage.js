@@ -45,7 +45,7 @@ class ResourceTypePage extends React.Component {
                             <Card key={e.id}style={{ width: '100%' }}>
                                 {/* <Card.Img style={{maxHeight: '200px'}} variant="top" src={resource.img} /> */}
                                 <Card.Body>
-                                <Card.Img style={{size: '20%'}} variant="top" src={e.imgurl} />
+                                <Card.Img  style={{maxWidth:"100px"}} variant="top" src={e.imgurl} />
                                     <Card.Title>{e.technology}</Card.Title>
                                     <Card.Text>{e.description}</Card.Text>
                                     <Button variant="primary" href={e.url}>Learn It!</Button>
