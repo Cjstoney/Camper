@@ -17,6 +17,9 @@ function Navbar() {
             <a className="nav-link js-scroll-trigger" href="/#portfolio">Resources</a>
           </li>
           <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="/saved">Saved Resources</a>
+          </li>
+          <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="/#contact">Contact</a>
           </li>
         </ul>
