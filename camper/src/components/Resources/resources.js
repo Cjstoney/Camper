@@ -30,7 +30,7 @@ function Resources() {
                 HTML
               </div>
               <div className="project-name">
-                <p>Learn about HTML</p>
+                <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript</p>
               </div>
             </div>
           </Link>
@@ -43,7 +43,7 @@ function Resources() {
                 CSS
               </div>
               <div className="project-name">
-                <p>Learn about CSS</p>
+                <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media</p>
               </div>
             </div>
           </Link>
@@ -56,7 +56,7 @@ function Resources() {
                 JavaScript
               </div>
               <div className="project-name">
-                <p>Learn about JavaScript</p>
+                <p>JavaScript, often abbreviated as JS, is a high-level, interpreted scripting language. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions</p>
               </div>
             </div>
           </Link>
@@ -69,7 +69,7 @@ function Resources() {
                 jQuery
               </div>
               <div className="project-name">
-                <p>Learn about jQuery</p>
+                <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax</p>
               </div>
             </div>
           </Link>
@@ -82,7 +82,7 @@ function Resources() {
                 Node JS
               </div>
               <div className="project-name">
-                <p>Learn about Node JS</p>
+                <p>Node.js is an open-source, cross-platform, JavaScript run-time environment that executes JavaScript code outside of a browser</p>
               </div>
             </div>
           </Link>
@@ -95,7 +95,7 @@ function Resources() {
                 MySQL
               </div>
               <div className="project-name">
-                <p>Learn about MySQL</p>
+                <p>MySQL is an open-source relational database management system</p>
               </div>
             </div>
           </Link>
@@ -108,7 +108,7 @@ function Resources() {
                 Express JS
               </div>
               <div className="project-name">
-                <p>Learn about Express JS</p>
+                <p>Express.js, or simply Express, is a web application framework for Node.js. It has been called the de facto standard server framework for Node.js</p>
               </div>
             </div>
           </Link>
@@ -121,7 +121,7 @@ function Resources() {
                 React
               </div>
               <div className="project-name">
-                <p>Learn about React</p>
+                <p>React is a JavaScript library for building user interfaces. React can be used as a base in the development of single-page or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded</p>
               </div>
             </div>
           </Link>
@@ -134,7 +134,7 @@ function Resources() {
                 MongoDB
               </div>
               <div className="project-name">
-                <p>Learn about MongoDB</p>
+                <p>MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema</p>
               </div>
             </div>
           </Link>
