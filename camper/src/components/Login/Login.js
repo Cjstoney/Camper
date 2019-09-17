@@ -4,8 +4,9 @@ import Button from 'react-bootstrap/Button';
 import "./style.css";
 
 class Login extends React.Component {
-  AssignValues = () => {
-    console.log("input from login form: ");
+  AssignValues = (e) => {
+    e.preventDefault();
+    console.log("input from login form: " );
     localStorage.setItem('emailLogin', document.form1.emailLogin.value);
     localStorage.setItem('pwLogin',  document.form1.pwLogin.value);
     
