@@ -27,8 +27,7 @@ class ResourceTypePage extends React.Component {
                 this.setState({
                     post: res.data
                 })
-                // console.log(this.state.post)
-                // console.log(res.data)
+                
             })
     }
     render() {

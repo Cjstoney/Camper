@@ -6,7 +6,15 @@ import Footer from "../components/Footer/footer";
 
 // import axios from 'axios';
 
-function SavedPage(){
+class SavedPage extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            resouce: null
+        }
+    }
+
+
     return(
         <div  className="savedPageDiv">
         <Navbar />
