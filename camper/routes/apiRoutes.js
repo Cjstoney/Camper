@@ -30,35 +30,46 @@ module.exports = function(app) {
           res.json(results);
         });
       });
-
+      
       // ========= Get Resource via search ==========
       app.get("/api/resource/search", function(req, res) {
         db.Resource.findAll({ where: { 
-            [Op.or]: [
-              {
-                technology: {
-                  [Op.like]: req.params.type //NEEDS UPDATE
-                }
-              },
-              {
-                tag: {
-                  [Op.like]: req.params.type //NEEDS UPDATE
-                }
-              },
-              {
-                description: {
-                  [Op.like]: req.params.type //NEEDS UPDATE
-                }
+          [Op.or]: [
+            {
+              technology: {
+                [Op.like]: req.params.type //NEEDS UPDATE
               }
-            ]
-          } }).then(function(
+            },
+            {
+              tag: {
+                [Op.like]: req.params.type //NEEDS UPDATE
+              }
+            },
+            {
+              description: {
+                [Op.like]: req.params.type //NEEDS UPDATE
+              }
+            }
+          ]
+        } }).then(function(
           results
           ) {
-          console.log(res);
-          res.json(results);
+            console.log(res);
+            res.json(results);
+          });
         });
-      });
+        
+        //======== get the saved resources ========
+        app.get("/api/resources/saved", function(req,res){
+          db.User_Resources.findAll({ where: {technology:req.body}
+          }).then(function(results){
+            console.log(res)
+            res.json(results)
+          })
+        })
 
+
+        
       // ======== POST NEW USER ========
       app.post('/api/newuser', function(req, res){
         console.log(req.body)
@@ -67,13 +78,14 @@ module.exports = function(app) {
           email: req.body.name,
           password: req.body.password,
           createdAt: req.body.createdAt
-        }).then(function(results){
+        }).then(user =>{
+          req.session.ser = user.dataVAlues;
           console.log("user added")
-          res.end()
+          res.redirect('/')
+        }).catch(error =>{
+          res.send("Sorry we ran into an issue. Please try again in a few mintues")
         })
-      })
-
-
+      });
 
       //======= Get User =============
       app.get("/api/user/:user-id", function(req, res) {
@@ -81,81 +93,10 @@ module.exports = function(app) {
           res.json(results);
         });
       });
-      app.get("/api/recent-accessories", function(req, res) {
-        db.Accessory.findAll({ order: ["updatedAt"], limit: 5 }).then(function(
-          results
-        ) {
-          res.json(results);
-        });
-      });
-      app.get("/api/user-accessories/:id", function(req, res) {
-        db.Accessory.findOne({ where: { id: req.params.id } }).then(function(
-          results
-        ) {
-          res.json(results);
-        });
-      });
-      app.get("/api/user-accessories-ids/:id", function(req, res) {
-        db.User_Accessory.findAll({ where: { user_id: req.params.id } }).then(
-          function(results) {
-            res.json(results);
-          }
-        );
-      });
-      // Get all hardware
-      app.get("/api/all-hardware", function(req, res) {
-        db.Hardware.findAll().then(function(results) {
-          res.json(results);
-        });
-      });
-      app.get("/api/recent-hardware", function(req, res) {
-        db.Hardware.findAll({ order: ["updatedAt"], limit: 5 }).then(function(
-          results
-        ) {
-          res.json(results);
-        });
-      });
-      app.get("/api/user-hardware/:id", function(req, res) {
-        db.Hardware.findOne({ where: { id: req.params.id } }).then(function(
-          results
-        ) {
-          res.json(results);
-        });
-      });
-      app.get("/api/user-hardware-ids/:id", function(req, res) {
-        db.User_Hardware.findAll({ where: { user_id: req.params.id } }).then(
-          function(results) {
-            res.json(results);
-          }
-        );
-      });
-      // Get all software
-      app.get("/api/all-software", function(req, res) {
-        db.Software.findAll().then(function(results) {
-          res.json(results);
-        });
-      });
-      app.get("/api/recent-software", function(req, res) {
-        db.Software.findAll({ order: ["updatedAt"], limit: 5 }).then(function(
-          results
-        ) {
-          res.json(results);
-        });
-      });
-      app.get("/api/user-software/:id", function(req, res) {
-        db.Software.findOne({ where: { id: req.params.id } }).then(function(
-          results
-        ) {
-          res.json(results);
-        });
-      });
-      app.get("/api/user-software-ids/:id", function(req, res) {
-        db.User_Software.findAll({ where: { user_id: req.params.id } }).then(
-          function(results) {
-            res.json(results);
-          }
-        );
-      });
+
+
+
+
       app.get("/api/logout", (req, res) => {
         if (req.session.user && req.cookies.user_sid) {
           res.clearCookie("user_sid");
