@@ -7,4 +7,8 @@ text-align: center;
 margin-top: 100px;
 }
  
-/* just some styling for the form here */
+/* CANNOT GET THIS BUTTON TO BE CENTERED OR SMALLER, its overriden by CSS somewhere else */
+.submitButton{
+    /* margin: 0px 0px 0px 0px; */
+    margin: 0 auto;
+}
