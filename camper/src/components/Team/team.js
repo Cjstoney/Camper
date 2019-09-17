@@ -27,7 +27,7 @@ function Team() {
                         <a href="https://github.com/bernardericschubert" target="_blank" rel="noopener noreferrer">
                         <h5>Eric Schubert</h5>
                         </a>
-                        <p>Bio goes here.</p>
+                        <p>Red hair, metal, holes in heart</p>
                       
                     </div>
                     <div className="carousel-item">
@@ -60,7 +60,7 @@ function Team() {
                         <a href="https://github.com/Cruzerman90" target="_blank" rel="noopener noreferrer">
                         <h5>Cruz Morgan</h5>
                         </a>
-                        <p>Bio goes here.</p>
+                        <p>Full stack web-developer trained at the University of Oregon</p>
                         
                     </div>
                     <div className="carousel-item">
