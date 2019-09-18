@@ -7,13 +7,16 @@ import Login from "../components/Login/Login";
 
 function LoginPage() {
     return (
+      
         <section className="Login" id="Login">
           
             <Navbar />
+            <h1>Login</h1>
             <Login />
             {/* <Footer /> */}
 
         </section>
+   
     )
 }
 export default LoginPage;
