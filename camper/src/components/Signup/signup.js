@@ -1,6 +1,6 @@
 import React from "react";
 import './styles.css';
-import '../../helpers/postNewUser'
+// import {newUser} from '../../helpers/postNewUser'
 
 const validEmailRegex = RegExp(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
 const validateForm = (errors) => {
@@ -93,7 +93,7 @@ class Signup extends React.Component {
               <small>Password must be eight characters in length.</small>
             </div>
             <div className='submit'>
-              <button onClick={newUser()} >Create</button>
+              <button /*onClick={newUser(this.state.fullname, this.state.email, this.state.password)}*/ >Create</button>
             </div>
           </form>
         </div>

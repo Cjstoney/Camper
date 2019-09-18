@@ -1,4 +1,4 @@
-const isLoggedIn = () =>{
+export const isLoggedIn = () =>{
     const userId = localStorage.getItem('...')
 
     if(userId !== undefined){

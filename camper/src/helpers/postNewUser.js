@@ -1,6 +1,6 @@
 import axios from 'axios';
 
- function newuser(){
+ export function newUser(){
     axios.post('http://localhost:3001/api/newuser', {
                 name: '...',
                 email: '...',
@@ -13,4 +13,3 @@ import axios from 'axios';
                 })
 }
 
-export default newuser();
