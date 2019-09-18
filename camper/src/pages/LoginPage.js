@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from '../components/Navbar/navbar';
-import Footer from '../components/Footer/footer';
+// import Footer from '../components/Footer/footer';
 import Login from "../components/Login/Login";
 
 
@@ -11,7 +11,7 @@ function LoginPage() {
           
             <Navbar />
             <Login />
-            <Footer />
+            {/* <Footer /> */}
 
         </section>
     )
