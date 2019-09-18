@@ -10,5 +10,16 @@ margin-top: 100px;
 /* CANNOT GET THIS BUTTON TO BE CENTERED OR SMALLER, its overriden by CSS somewhere else */
 .submitButton{
     /* margin: 0px 0px 0px 0px; */
-    margin: 0 auto;
+    /* margin: 0px 500px 0px 50px; */
 }
+
+/* .entireContainer{
+    height: 180vh;
+    width: 100%;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4623a; 
+
+} */

@@ -2,6 +2,9 @@ import React from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import "./style.css";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Login extends React.Component {
   AssignValues = (e) => {
@@ -27,7 +30,10 @@ Value1= () =>
 
   render() {
     return (
+<Container className="entireContainer">
 
+       <Row>
+         <Col sm={4}>
       <Form name="form1">
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -42,16 +48,20 @@ Value1= () =>
           <Form.Control type="password" name="pwLogin" placeholder="Password" />
         </Form.Group>
 
-
+  
         <Button onClick={this.AssignValues} className="submitButton" variant="primary" type="submit">
           Submit
   </Button>
+
 
         <Button style={{ margin: '20px 20px 20px 20px' }} variant="primary" type="submit" href="/signup">
           Or Sign Up
   </Button>
       </Form>
+      </Col>
+      </Row>
 
+      </Container>
     )
   };
 }
