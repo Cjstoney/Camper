@@ -4,10 +4,7 @@ import Footer from "../components/Footer/footer";
 // import Axios from "axios";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-<<<<<<< HEAD
 import './SavedPage.css'
-=======
->>>>>>> develop
 
 import axios from 'axios';
 
