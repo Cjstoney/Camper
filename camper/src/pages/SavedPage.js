@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from '../components/Navbar/navbar';
 import Footer from "../components/Footer/footer";
-import Axios from "axios";
-// import Card from 'react-bootstrap/Card';
-// import Button from 'react-bootstrap/Button';
+// import Axios from "axios";
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 import axios from 'axios';
 
@@ -17,21 +17,22 @@ class SavedPage extends React.Component{
     }
 
     componentDidMount(){
-        axios.get("/api/resources/saved")
+        axios.get("http://localhost:3001/api/resources/saved")
         .then(res=>{
+            console.log("res", res.data[0])
             this.setState({
-                resource: res.data
+                resource: res.data[0]
             })
         })
         }
 
         render(){
-            console.log(this.state.resource)
+            // console.log('this.state', this.state.resource)
             let resource = this.state.resource ? ((
                 <div className="resource">
                     {
                         this.state.resource.map(function (e, idx, arr) {
-                            console.log(e)
+                            // console.log(e)
                             
                             return (
                                 
@@ -42,7 +43,7 @@ class SavedPage extends React.Component{
                                     <Card.Img  style={{maxWidth:"100px"}} variant="top" src={e.imgurl} />
                                         <Card.Title>{e.technology}</Card.Title>
                                         <Card.Text>{e.description}</Card.Text>
-                                        <Button variant="primary" href={e.url}>Learn It</Button>
+                                        <Button variant="primary" target="_blank" href={e.url}>Learn It</Button>
                                         <Button style={{marginLeft:"10px"}} variant="primary" href={e.url}>Save</Button>
                                     </Card.Body>
                                 </Card>
