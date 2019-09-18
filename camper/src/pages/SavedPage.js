@@ -4,6 +4,7 @@ import Footer from "../components/Footer/footer";
 // import Axios from "axios";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import './SavedPage.css'
 
 import axios from 'axios';
 
@@ -44,7 +45,6 @@ class SavedPage extends React.Component{
                                         <Card.Title>{e.technology}</Card.Title>
                                         <Card.Text>{e.description}</Card.Text>
                                         <Button variant="primary" target="_blank" href={e.url}>Learn It</Button>
-                                        <Button style={{marginLeft:"10px"}} variant="primary" href={e.url}>Save</Button>
                                     </Card.Body>
                                 </Card>
                                 
