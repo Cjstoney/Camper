@@ -1,5 +1,6 @@
 var Sequelize = require("sequelize");
 const db = require("../models");
+let Sequelize= require ('sequelize');
 const Op = Sequelize.Op;
 
 module.exports = function(app) {
@@ -61,10 +62,12 @@ module.exports = function(app) {
         
         //======== get the saved resources ========
         app.get("/api/resources/saved", function(req,res){
-          db.User_Resources.findAll({ where: {technology:req.body}
-          }).then(function(results){
+          console.log(req.body)
+          db.sequelize.query("SELECT r.id, r.technology, r.description, r.url, r.imgurl  FROM camper.User_Resources ur INNER JOIN camper.resources r ON ur.resource_id = r.id WHERE ur.user_id = 1;"
+          ).then(function(results){ 
             console.log(res)
             res.json(results)
+            console.log('results', results)
           })
         })
 
