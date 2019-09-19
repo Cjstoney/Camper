@@ -260,7 +260,8 @@ textarea {
 
 button,
 input {
-  overflow: visible;
+
+  
 }
 
 button,
@@ -10753,7 +10754,7 @@ header.masthead h1 {
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {

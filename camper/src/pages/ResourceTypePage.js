@@ -8,8 +8,6 @@ import './ResourceTypePage.css'
 // import html
 
 
-
-
 class ResourceTypePage extends React.Component {
     constructor() {
         super()
@@ -48,7 +46,7 @@ class ResourceTypePage extends React.Component {
                                     <Card.Title>{e.technology}</Card.Title>
                                     <Card.Text>{e.description}</Card.Text>
                                     <Button variant="primary" target='_blank' href={e.url}>Learn It</Button>
-                                    <Button style={{marginLeft:"10px"}} variant="primary" href={e.url}>Save</Button>
+                                    <Button className="saveButton" style={{marginLeft:"10px"}} variant="primary" href="">Save</Button>
                                 </Card.Body>
                             </Card>
                             

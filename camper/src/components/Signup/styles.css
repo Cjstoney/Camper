@@ -16,12 +16,11 @@
     min-width: 100px;
     min-height: 800px;
     border-radius: 6px;
-    box-shadow: 0px 8px 36px #222;
     background-color: #fefefe;
   }
   
   .form-wrapper > h2 {
-      padding-top: 100px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     font-family: "Segoe UI", "Ubuntu", "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
@@ -38,7 +37,7 @@
   form {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .info {
@@ -67,7 +66,6 @@
   }
   
   button {
-    min-width: 100%;
     cursor: pointer;
     margin-right: 0.25em;
     margin-top: 0.5em;
