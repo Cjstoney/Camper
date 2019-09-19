@@ -2,7 +2,6 @@ import React from "react";
 import './styles.css';
 import {newUser} from '../../helpers/postNewUser'
 
-
 const validEmailRegex = RegExp(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
 const validateForm = (errors) => {
   let valid = true;
@@ -96,7 +95,7 @@ class Signup extends React.Component {
               <small>Password must be eight characters in length.</small>
             </div>
             <div className='submit'>
-              <button onClick={newUser()}>Create</button>
+              <button onClick={newUser}>Create</button>
             </div>
           </form>
         </div>
