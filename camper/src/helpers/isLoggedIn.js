@@ -7,11 +7,13 @@ export const isLoggedIn = (e) =>{
 
     console.log('password', password , 'email', email)
 
-    axios.get('http://localhost:3001/api/user', {
-    params:{
-        email: email,
-        password: password
-    }
+    axios({
+        method:'get',
+        url: 'http://localhost:3001/api/user',
+        data:{
+            email: email,
+            password: password
+        }
     }).then(function (response){
         console.log(response)
     }).catch(function(error){

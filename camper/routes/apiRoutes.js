@@ -88,20 +88,20 @@ module.exports = function (app) {
       console.log("user added")
       res.redirect('/')
     }).catch(error => {
-      res.send("Sorry we ran into an issue. Please try again in a few mintues")
+      res.send("Sorry we ran into an issue. Please try again in a few mintues.")
     })
   });
 
   //======= Get User =============
   app.get("/api/user", function (req, res) {
-    db.User.findOne({
-      where: {
-        email: req.body.email,
-        password: req.body.password
-      }
-    }).then(function (results) {
+    db.User.findAll({
+      where: { [Op.and]: [{ email: { [Op.eq]: req.body.email } }, { password: { [Op.ep]: req.body.password } }] },
+    }
+    ).then(function (results) {
       res.json(results);
-    });
+    })/*.catch(error =>{
+      res.send('Sorry we have run into an issue. Please try again in a few minutes.')
+    });*/
   });
 
 
