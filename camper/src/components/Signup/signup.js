@@ -1,6 +1,6 @@
 import React from "react";
 import './styles.css';
-// import {newUser} from '../../helpers/postNewUser'
+import {newUser} from '../../helpers/postNewUser'
 
 
 const validEmailRegex = RegExp(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
