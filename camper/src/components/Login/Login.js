@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import "./style.css";
 import Container from 'react-bootstrap/Container';
+import {isLoggedIn} from '../../helpers/isLoggedIn'
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 
@@ -48,7 +49,7 @@ Value1= () =>
         </Form.Group>
 
   
-        <Button onClick={this.AssignValues} className="submitButton" variant="primary" type="submit">
+        <Button onClick={isLoggedIn} className="submitButton" variant="primary" type="submit">
           Submit
   </Button>
 
