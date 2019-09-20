@@ -1,12 +1,14 @@
 import React from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import "./style.css";
+import "./login.css";
 import Container from 'react-bootstrap/Container';
+import {isLoggedIn} from '../../helpers/isLoggedIn'
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 
 class Login extends React.Component {
+  
   AssignValues = (e) => {
     e.preventDefault();
     console.log("input from login form: " );
@@ -48,13 +50,13 @@ Value1= () =>
         </Form.Group>
 
   
-        <Button onClick={this.AssignValues} className="submitButton" variant="primary" type="submit">
-          Submit
+        <Button onClick={isLoggedIn} className="submitButton" variant="primary" type="submit">
+          Login
   </Button>
 
 
         <Button style={{ margin: '20px 20px 20px 20px' }} variant="primary" type="submit" href="/signup">
-          Or Sign Up
+          Sign Up
   </Button>
       </Form>
    

@@ -17,9 +17,7 @@ background-color: #fefefe;
  
 /* CANNOT GET THIS BUTTON TO BE CENTERED OR SMALLER, its overriden by CSS somewhere else */
 .submitButton{
-    margin: 10px 250px 0px 0px;
-    max-width: 20%;
-    
+    margin: 20px;
 }
 
 .entireContainer{
