@@ -56,7 +56,7 @@ class ResourceTypePage extends React.Component {
                 }
             </div>
         ) : (
-                <h1 >No resource listed at this point and time</h1>)
+                <h1 >No resource listed</h1>)
 
         return (
             <section className="ResourcesClass" id="ResourcesClass">

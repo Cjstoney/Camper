@@ -40,7 +40,7 @@ Value1= () =>
           <Form.Label>Email Address</Form.Label>
           <Form.Control input='true' type="email" name="emailLogin" placeholder="Enter email" />
           <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
+            <p>We'll never share your email with anyone else</p>
     </Form.Text>
         </Form.Group>
 
@@ -52,12 +52,12 @@ Value1= () =>
   
         <Button onClick={isLoggedIn} className="submitButton" variant="primary" type="submit">
           Login
-  </Button>
+        </Button>
 
 
         <Button style={{ margin: '20px 20px 20px 20px' }} variant="primary" type="submit" href="/signup">
           Sign Up
-  </Button>
+        </Button>
       </Form>
    
 
