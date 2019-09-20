@@ -8,6 +8,7 @@ import Resources from './components/Resources/resources';
 import Team from './components/Team/team';
 import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
+import Searchbar from './components/Searchbar/searchbar';
 // import logo from './logo.svg';
 import './App.css';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
@@ -34,6 +35,7 @@ function App() {
         <Route exact path="/" component={Header} />
         <Route exact path="/" component={About} />
         <Route exact path="/" component={Services} />
+        <Route exact path="/" component={Searchbar} />
         <Route exact path="/" component={Resources} />
         <Route exact path="/" component={Team} />
         <Route exact path="/" component={Contact} />
