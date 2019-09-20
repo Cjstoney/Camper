@@ -30,6 +30,7 @@ Value1= () =>
   }
 
   render() {
+    console.log(this.props);
     return (
 
 <div className='wrapper'>
@@ -50,12 +51,20 @@ Value1= () =>
         </Form.Group>
 
   
+<<<<<<< HEAD
+        <Button onClick={(e)=> isLoggedIn(e, this.props.history)} className="submitButton" variant="primary" type="submit">
+=======
         <Button onClick={isLoggedIn} className="submitButton" id="loginBtn" variant="primary" type="submit">
+>>>>>>> develop
           Login
         </Button>
 
 
+<<<<<<< HEAD
+        <Button style={{ margin: '20px 20px 20px 20px' }} variant="primary" type="submit" href="/signup" >
+=======
         <Button style={{ margin: '20px 20px 20px 20px' }} id="loginBtn" variant="primary" type="submit" href="/signup">
+>>>>>>> develop
           Sign Up
         </Button>
       </Form>

@@ -5,10 +5,13 @@ import Navbar from "../components/Navbar/navbar";
 
 
 
-function LoginPage() {
+function LoginPage(props) {
     return (
       
         <section className="Login" id="Login">
+        
+            <h1>Join Us</h1>
+            <Login history={props.history} />
             <Navbar />
             <Login />
 
