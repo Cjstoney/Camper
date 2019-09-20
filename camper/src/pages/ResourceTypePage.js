@@ -8,8 +8,6 @@ import './ResourceTypePage.css'
 // import html
 
 
-
-
 class ResourceTypePage extends React.Component {
     constructor() {
         super()
@@ -27,8 +25,7 @@ class ResourceTypePage extends React.Component {
                 this.setState({
                     post: res.data
                 })
-                // console.log(this.state.post)
-                // console.log(res.data)
+                
             })
     }
     render() {
@@ -41,13 +38,15 @@ class ResourceTypePage extends React.Component {
                         
                         return (
                             
-
-                            <Card key={e.id}style={{ width: '100%' }}>
+                            
+                            <Card className="mainCard" key={e.id}style={{ width: '75%'}}>
                                 {/* <Card.Img style={{maxHeight: '200px'}} variant="top" src={resource.img} /> */}
                                 <Card.Body>
+                                <Card.Img  style={{maxWidth:"100px"}} variant="top" src={e.imgurl} />
                                     <Card.Title>{e.technology}</Card.Title>
                                     <Card.Text>{e.description}</Card.Text>
-                                    <Button variant="primary" href={e.url}>Learn It!</Button>
+                                    <Button variant="primary" target='_blank' href={e.url}>Learn It</Button>
+                                    <Button className="saveButton" style={{marginLeft:"10px"}} variant="primary" href="">Save</Button>
                                 </Card.Body>
                             </Card>
                             
@@ -57,7 +56,7 @@ class ResourceTypePage extends React.Component {
                 }
             </div>
         ) : (
-                <h1 >No resource listed at this point and time</h1>)
+                <h1 >No resource listed</h1>)
 
         return (
             <section className="ResourcesClass" id="ResourcesClass">
