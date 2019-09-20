@@ -3,7 +3,7 @@ import "./team.css";
 
 function Team() {
   return (
-    <section className="page-section" id="team">
+    <section className="page-section" id="contact">
     <div className="container">
       <h2 className="text-center mt-0">Meet Our Team</h2>
       <hr className="divider my-4"></hr>
@@ -27,7 +27,7 @@ function Team() {
                         <a href="https://github.com/bernardericschubert" target="_blank" rel="noopener noreferrer">
                         <h5>Eric Schubert</h5>
                         </a>
-                        <p>Red hair, metal, holes in heart</p>
+                        <p><small>Red hair, metal, holes in heart</small></p>
                       
                     </div>
                     <div className="carousel-item">
@@ -38,7 +38,7 @@ function Team() {
                         <a href="https://github.com/aeldenburg001" target="_blank" rel="noopener noreferrer">
                         <h5>Andrew Eldenburg</h5>
                         </a>
-                        <p>Full stack web developer with a passion for making even the most complex things simple to understand and easy to use.</p>
+                        <p><small>Full stack web developer with a passion for making even the most complex things simple to understand and easy to use</small></p>
                         
                     </div>
                     <div className="carousel-item">
@@ -49,7 +49,7 @@ function Team() {
                         <a href="https://github.com/Cjstoney" target="_blank" rel="noopener noreferrer">
                         <h5>Camerone Stoney</h5>
                         </a>
-                        <p>Full-Stack Web Developer, experienced supervisor and creative thinker.</p>
+                        <p><small>Full-Stack Web Developer, experienced supervisor and creative thinker</small></p>
                         
                     </div>
                     <div className="carousel-item">
@@ -60,7 +60,7 @@ function Team() {
                         <a href="https://github.com/Cruzerman90" target="_blank" rel="noopener noreferrer">
                         <h5>Cruz Morgan</h5>
                         </a>
-                        <p>Full stack web-developer trained at the University of Oregon</p>
+                        <p><small>Full stack web-developer trained at the University of Oregon</small></p>
                         
                     </div>
                     <div className="carousel-item">
@@ -71,7 +71,7 @@ function Team() {
                         <a href="https://github.com/samanthalossett" target="_blank" rel="noopener noreferrer">
                         <h5>Samantha Lossett</h5>
                         </a>
-                        <p>I am currently working towards my certificate in Full-Stack web development at the University of Oregon.</p>
+                        <p><small>I am currently working towards my certificate in Full-Stack web development at the University of Oregon</small></p>
                         
                     </div>
                     </div>
