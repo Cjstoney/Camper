@@ -5,11 +5,12 @@ import Navbar from "../components/Navbar/navbar";
 
 
 
-function SignupPage(){
+function SignupPage(props){
+
     return(
         <section className="signupdiv">
             <Navbar />
-            <Signup />
+            <Signup history={props.history} />
             {/* <Footer /> */}
         </section>
     )

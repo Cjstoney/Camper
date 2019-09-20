@@ -66,6 +66,7 @@ class Signup extends React.Component {
   
   
   render(){
+    console.log(this.props)
     const {errors} = this.state;
     return (
       <div className="form1">
@@ -95,7 +96,7 @@ class Signup extends React.Component {
               <small>Password must be eight characters in length.</small>
             </div>
             <div className='submit'>
-              <button onClick={newUser}>Create</button>
+              <button onClick={() =>newUser(this.props.history)}>Create</button>
             </div>
           </form>
         </div>
