@@ -4,6 +4,11 @@ h1{
     margin-bottom: 20px;
 }
 
+#loginBtn {
+    top:50%; 
+    left:50%;
+}
+
 Form {
 display: inline-block;
 margin: 0 auto;
@@ -13,13 +18,6 @@ max-width: 50%;
 margin-top: 50px;
 border-radius: 6px;
 background-color: #fefefe;
-}
-
-button {
-    margin: 0px -40px;
-    position: relative;
-    top: 50%;
-    left: 50%;
 }
  
 /* CANNOT GET THIS BUTTON TO BE CENTERED OR SMALLER, its overriden by CSS somewhere else */
