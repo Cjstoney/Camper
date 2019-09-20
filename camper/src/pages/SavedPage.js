@@ -44,7 +44,7 @@ class SavedPage extends React.Component{
                                     <Card.Img  style={{maxWidth:"100px"}} variant="top" src={e.imgurl} />
                                         <Card.Title>{e.technology}</Card.Title>
                                         <Card.Text>{e.description}</Card.Text>
-                                        <Button variant="primary" target="_blank" href={e.url}>Learn It</Button>
+                                        <Button variant="primary" target="_blank" href={e.url}>Learn More</Button>
                                     </Card.Body>
                                 </Card>
                                 

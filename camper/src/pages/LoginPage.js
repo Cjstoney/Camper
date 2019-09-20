@@ -11,7 +11,7 @@ function LoginPage() {
         <section className="Login" id="Login">
           
             <Navbar />
-            <h1>Login</h1>
+            <h1>Join Us</h1>
             <Login />
             {/* <Footer /> */}
 
