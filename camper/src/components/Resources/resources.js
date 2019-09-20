@@ -10,14 +10,12 @@ function Resources() {
      <h2 className="text-center mt-0">Resources</h2>
      <hr className="divider my-4"></hr>
 
-      <form autoComplete="off" action="/action_page.php">
+      {/*<form autoComplete="off" action="/action_page.php">
         <div className="autocomplete">
             <input id="myInput" type="text" name="search" placeholder="Search.."/>
         </div>
         <input type="submit"/>
-      </form>
-
-    <br></br>
+      </form>*/}
 
     <section>
     <div className="container-fluid p-0">

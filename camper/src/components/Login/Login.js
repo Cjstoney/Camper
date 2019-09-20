@@ -51,12 +51,12 @@ Value1= () =>
 
   
         <Button onClick={isLoggedIn} className="submitButton" variant="primary" type="submit">
-          Submit
+          Login
   </Button>
 
 
         <Button style={{ margin: '20px 20px 20px 20px' }} variant="primary" type="submit" href="/signup">
-          Or Sign Up
+          Sign Up
   </Button>
       </Form>
    
