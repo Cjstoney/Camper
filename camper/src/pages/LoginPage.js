@@ -11,9 +11,9 @@ function LoginPage(props) {
         <section className="Login" id="Login">
         
             <h1>Join Us</h1>
-            <Login history={props.history} />
             <Navbar />
-            <Login />
+            <Login history={props.history} />
+        
 
         </section>
    
