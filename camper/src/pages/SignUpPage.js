@@ -5,14 +5,16 @@ import Navbar from "../components/Navbar/navbar";
 
 
 
-function SignupPage(){
+function SignupPage(props){
+
     return(
         <section className="signupdiv">
             <Navbar />
-            <Signup />
+            <Signup history={props.history} />
             {/* <Footer /> */}
         </section>
     )
 }
 
 export default SignupPage;
+///writing some stuff so i can commit it //
