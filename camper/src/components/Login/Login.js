@@ -36,6 +36,7 @@ Value1= () =>
 <div className='wrapper'>
 <div className='form-wrapper'>
 <h2>Join Us</h2>
+
       <Form name="form1">
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email Address</Form.Label>
@@ -46,12 +47,12 @@ Value1= () =>
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" name="pwLogin" placeholder="Password" />
           <Form.Text className="text-muted">
-            <p>We'll never share your email with anyone else</p>
+            <p><small>We'll never share your email with anyone else</small></p>
           </Form.Text>
         </Form.Group>
 
   
-        <Button onClick={(e)=> isLoggedIn(e, this.props.history)} className="submitButton" variant="primary" type="submit">
+        <Button onClick={(e)=> isLoggedIn(e, this.props.history)} id="loginBtn" className="submitButton" variant="primary" type="submit">
           Login
         </Button>
 

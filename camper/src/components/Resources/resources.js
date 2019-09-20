@@ -28,7 +28,7 @@ function Resources() {
                 
               </div>
               <div className="project-name">
-                Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript
+                <small>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript</small>
               </div>
             </div>
           </Link>
@@ -41,7 +41,7 @@ function Resources() {
                 
               </div>
               <div className="project-name">
-                Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media
+                <small>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media</small>
               </div>
             </div>
           </Link>
@@ -54,7 +54,7 @@ function Resources() {
                 
               </div>
               <div className="project-name">
-                JavaScript, often abbreviated as JS, is a high-level, interpreted scripting language. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions
+                <small>JavaScript, often abbreviated as JS, is a high-level, interpreted scripting language. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions</small>
               </div>
             </div>
           </Link>
@@ -67,7 +67,7 @@ function Resources() {
                 
               </div>
               <div className="project-name">
-                jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax
+                <small>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax</small>
               </div>
             </div>
           </Link>
@@ -80,7 +80,7 @@ function Resources() {
                 
               </div>
               <div className="project-name">
-                Node.js is an open-source, cross-platform, JavaScript run-time environment that executes JavaScript code outside of a browser
+                <small>Node.js is an open-source, cross-platform, JavaScript run-time environment that executes JavaScript code outside of a browser</small>
               </div>
             </div>
           </Link>
@@ -93,7 +93,7 @@ function Resources() {
                 
               </div>
               <div className="project-name">
-                MySQL is an open-source relational database management system
+                <small>MySQL is an open-source relational database management system</small>
               </div>
             </div>
           </Link>
@@ -106,7 +106,7 @@ function Resources() {
                 
               </div>
               <div className="project-name">
-                Express.js, or simply Express, is a web application framework for Node.js. It has been called the de facto standard server framework for Node.js
+                <small>Express.js, or simply Express, is a web application framework for Node.js. It has been called the de facto standard server framework for Node.js</small>
               </div>
             </div>
           </Link>
@@ -119,7 +119,7 @@ function Resources() {
                 
               </div>
               <div className="project-name">
-                React is a JavaScript library for building user interfaces. React can be used as a base in the development of single-page or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded
+                <small>React is a JavaScript library for building user interfaces. React can be used as a base in the development of single-page or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded</small>
               </div>
             </div>
           </Link>
@@ -132,7 +132,7 @@ function Resources() {
                 
               </div>
               <div className="project-name">
-                MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema
+                <small>MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema</small>
               </div>
             </div>
           </Link>

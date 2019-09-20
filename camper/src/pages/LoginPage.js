@@ -10,7 +10,6 @@ function LoginPage(props) {
       
         <section className="Login" id="Login">
         
-            <h1>Join Us</h1>
             <Navbar />
             <Login history={props.history} />
         
