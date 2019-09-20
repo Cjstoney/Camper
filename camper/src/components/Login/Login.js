@@ -8,6 +8,7 @@ import {isLoggedIn} from '../../helpers/isLoggedIn'
 // import Col from 'react-bootstrap/Col';
 
 class Login extends React.Component {
+  
   AssignValues = (e) => {
     e.preventDefault();
     console.log("input from login form: " );

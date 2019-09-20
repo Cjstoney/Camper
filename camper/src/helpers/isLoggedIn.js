@@ -7,27 +7,13 @@ export const isLoggedIn = (e) =>{
 
     console.log('password', password , 'email', email)
 
-    axios({
-        method:'get',
-        url: 'http://localhost:3001/api/user',
-        data:{
-            email: email,
-            password: password
-        }
-    }).then(function (response){
+    axios.get(`http://localhost:3001/api/user/${email}/${password}`)
+    .then(function (response){
         console.log(response)
+        localStorage.setItem('id', response.data[0].id)
     }).catch(function(error){
         console.log(error)
     })
 
-
-    // const userId = localStorage.getItem('...')
-
-    // if(userId !== undefined){
-    //     document.getElementsByid('savedButton').href='/saved'
-       
-    // }else{
-    //     document.getElementsByid('savedButton').href='/login'
-    //     }
 }
 

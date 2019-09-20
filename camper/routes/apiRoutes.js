@@ -93,11 +93,10 @@ module.exports = function (app) {
   });
 
   //======= Get User =============
-  app.get("/api/user", function (req, res) {
-    db.User.findAll({
-      where: { [Op.and]: [{ email: { [Op.eq]: req.body.email } }, { password: { [Op.ep]: req.body.password } }] },
-    }
-    ).then(function (results) {
+  app.get("/api/user/:email/:password", function (req, res) {
+    console.log(req.params, 'req.body')
+    db.User.findAll({where: {email: req.params.email, password: req.params.password}
+    }).then(function (results) {
       res.json(results);
     })/*.catch(error =>{
       res.send('Sorry we have run into an issue. Please try again in a few minutes.')
