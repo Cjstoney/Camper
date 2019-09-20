@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <section className="page-section" id="contact">
+    <section className="page-section">
         <div className="container">
         <div className="row justify-content-center">
             <div className="col-lg-8 text-center">

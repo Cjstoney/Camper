@@ -3,7 +3,7 @@ import "./team.css";
 
 function Team() {
   return (
-    <section className="page-section" id="team">
+    <section className="page-section" id="contact">
     <div className="container">
       <h2 className="text-center mt-0">Meet Our Team</h2>
       <hr className="divider my-4"></hr>

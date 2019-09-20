@@ -2573,7 +2573,6 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
   color: #212529;
   text-align: center;
   margin-bottom: 0;
@@ -2624,7 +2623,6 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #f4623a;
   border-color: #f4623a;
-  padding: 0.938em;
 }
 
 .btn-primary:hover {
@@ -10591,12 +10589,12 @@ hr.light {
 
 .btn {
   font-family: "Segoe UI", "Ubuntu", "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .btn-xl {
-  padding: 1.25rem 2.25rem;
-  font-size: 0.85rem;
+  padding: 1rem 2rem;
+  font-size: 0.75rem;
   font-weight: 700;
   border: none;
 }
