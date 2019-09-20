@@ -1,7 +1,7 @@
 import React from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import "./style.css";
+import "./login.css";
 import Container from 'react-bootstrap/Container';
 import {isLoggedIn} from '../../helpers/isLoggedIn'
 // import Row from 'react-bootstrap/Row';
