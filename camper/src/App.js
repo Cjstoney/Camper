@@ -12,7 +12,7 @@ import Footer from './components/Footer/footer';
 import './App.css';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import LoginPage from "./pages/LoginPage";
-import ResourcesPage from "./pages/ResourcesPage";
+// import ResourcesPage from "./pages/ResourcesPage";
 import SignUpPage from "./pages/SignUpPage";
 import ResourceTypePage from './pages/ResourceTypePage';
 import SavedPage from "./pages/SavedPage";
@@ -25,7 +25,7 @@ function App() {
     <Router>
       <div className="App">
         <Route path="/login" component={LoginPage} />
-        <Route  exact path="/resources" component={ResourcesPage} />
+        {/* <Route  exact path="/resources" component={ResourcesPage} /> */}
         <Route exact path="/signup" component={SignUpPage} />
         <Route path="/resources/:ResourceTypePage" component={ResourceTypePage} />
         <Route path="/saved" component={SavedPage} />

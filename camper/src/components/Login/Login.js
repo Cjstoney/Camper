@@ -31,6 +31,7 @@ Value1= () =>
   }
 
   render() {
+    console.log(this.props);
     return (
 <Container className="entireContainer">
 
@@ -50,12 +51,12 @@ Value1= () =>
         </Form.Group>
 
   
-        <Button onClick={isLoggedIn} className="submitButton" variant="primary" type="submit">
+        <Button onClick={(e)=> isLoggedIn(e, this.props.history)} className="submitButton" variant="primary" type="submit">
           Login
         </Button>
 
 
-        <Button style={{ margin: '20px 20px 20px 20px' }} variant="primary" type="submit" href="/signup">
+        <Button style={{ margin: '20px 20px 20px 20px' }} variant="primary" type="submit" href="/signup" >
           Sign Up
         </Button>
       </Form>
