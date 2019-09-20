@@ -96,7 +96,7 @@ class Signup extends React.Component {
               <small>Password must be eight characters in length.</small>
             </div>
             <div className='submit'>
-              <button onClick={() =>newUser(this.props.history)}>Create</button>
+              <button onClick={() =>newUser(this.props.history)} id="createBtn">Create</button>
             </div>
           </form>
         </div>
