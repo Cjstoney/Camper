@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Sgr31087!",
+    "password": "",
     "database": "camper",
     "host": "localhost",
     "dialect": "mysql"

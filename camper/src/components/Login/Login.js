@@ -2,7 +2,6 @@ import React from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import "./login.css";
-import Container from 'react-bootstrap/Container';
 import {isLoggedIn} from '../../helpers/isLoggedIn'
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -32,36 +31,38 @@ Value1= () =>
 
   render() {
     return (
-<Container className="entireContainer">
 
-       
+<div className='wrapper'>
+<div className='form-wrapper'>
+<h2>Join Us</h2>
       <Form name="form1">
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email Address</Form.Label>
           <Form.Control input='true' type="email" name="emailLogin" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            <p>We'll never share your email with anyone else</p>
-    </Form.Text>
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" name="pwLogin" placeholder="Password" />
+          <Form.Text className="text-muted">
+            <p>We'll never share your email with anyone else</p>
+          </Form.Text>
         </Form.Group>
 
   
-        <Button onClick={isLoggedIn} className="submitButton" variant="primary" type="submit">
+        <Button onClick={isLoggedIn} className="submitButton" id="loginBtn" variant="primary" type="submit">
           Login
         </Button>
 
 
-        <Button style={{ margin: '20px 20px 20px 20px' }} variant="primary" type="submit" href="/signup">
+        <Button style={{ margin: '20px 20px 20px 20px' }} id="loginBtn" variant="primary" type="submit" href="/signup">
           Sign Up
         </Button>
       </Form>
    
+      </div>
+      </div>
 
-      </Container>
     )
   };
 }
