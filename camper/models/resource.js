@@ -22,4 +22,8 @@ module.exports = function(sequelize, DataTypes) {
       }
     });
     return Resource;
+
+    Resource.belongsToMany(User, { through: UserResource })
+
+    // resource belongs to many users
 };
