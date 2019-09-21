@@ -18,7 +18,7 @@ return this.state.data.map(resource =>
   <Card.Body>
     <Card.Title>{resource.title}</Card.Title>
     <Card.Text>{resource.desc}</Card.Text>
-    <Button variant="primary" href={resource.link}>Learn It!</Button>
+    <Button variant="primary" href={resource.link}>Learn</Button>
   </Card.Body>
 </Card>
 )

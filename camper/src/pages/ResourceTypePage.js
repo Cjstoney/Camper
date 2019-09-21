@@ -45,8 +45,8 @@ class ResourceTypePage extends React.Component {
                                 <Card.Img  style={{maxWidth:"100px"}} variant="top" src={e.imgurl} />
                                     <Card.Title>{e.technology}</Card.Title>
                                     <Card.Text>{e.description}</Card.Text>
-                                    <Button variant="primary" target='_blank' href={e.url}>Learn It</Button>
-                                    <Button className="saveButton" style={{marginLeft:"10px"}} variant="primary" href="">Save</Button>
+                                    <Button variant="primary" target='_blank' href={e.url}>Learn</Button>
+                                    <Button className="saveButton" style={{marginLeft:"20px"}} variant="primary" href="">Save</Button>
                                 </Card.Body>
                             </Card>
                             
@@ -56,7 +56,7 @@ class ResourceTypePage extends React.Component {
                 }
             </div>
         ) : (
-                <h1 >No resource listed at this point and time</h1>)
+                <h1 >No resource listed</h1>)
 
         return (
             <section className="ResourcesClass" id="ResourcesClass">

@@ -1,19 +1,18 @@
 import React from "react";
-import Navbar from '../components/Navbar/navbar';
 // import Footer from '../components/Footer/footer';
 import Login from "../components/Login/Login";
+import Navbar from "../components/Navbar/navbar";
 
 
 
-function LoginPage() {
+function LoginPage(props) {
     return (
       
         <section className="Login" id="Login">
-          
+        
             <Navbar />
-            <h1>Login</h1>
-            <Login />
-            {/* <Footer /> */}
+            <Login history={props.history} />
+        
 
         </section>
    

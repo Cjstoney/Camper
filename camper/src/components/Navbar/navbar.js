@@ -21,7 +21,7 @@ function Navbar() {
             <a id='searchButton' className="nav-link js-scroll-trigger" href="/search">Search Resources</a>
           </li>
           <li className="nav-item">
-            <a id='savedButton' className="nav-link js-scroll-trigger" /*onClick="isLoggedIn(evnt)"*/ href="/saved">Saved Resources</a>
+            <a id='savedButton' className="nav-link js-scroll-trigger" /*onClick="isLoggedIn(evnt)"*/ href="/saved">Saved</a>
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="/#contact">Contact</a>

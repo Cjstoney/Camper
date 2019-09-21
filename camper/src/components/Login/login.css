@@ -4,6 +4,11 @@ h1{
     margin-bottom: 20px;
 }
 
+#loginBtn {
+    top:50%; 
+    left:50%;
+}
+
 Form {
 display: inline-block;
 margin: 0 auto;
