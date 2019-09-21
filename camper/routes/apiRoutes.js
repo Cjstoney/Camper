@@ -32,36 +32,6 @@ module.exports = function (app) {
     });
   });
 
-  // ========= Get Resource via search ==========
-  app.get("/api/resource/search", function (req, res) {
-    db.Resource.findAll({
-      where: {
-        [Op.or]: [
-          {
-            technology: {
-              [Op.like]: req.params.type //NEEDS UPDATE
-            }
-          },
-          {
-            tag: {
-              [Op.like]: req.params.type //NEEDS UPDATE
-            }
-          },
-          {
-            description: {
-              [Op.like]: req.params.type //NEEDS UPDATE
-            }
-          }
-        ]
-      }
-    }).then(function (
-      results
-    ) {
-      console.log(res);
-      res.json(results);
-    });
-  });
-
   //======== get the saved resources ========
   app.get("/api/resources/saved", function (req, res) {
     console.log(req.body)
@@ -73,7 +43,35 @@ module.exports = function (app) {
     })
   })
 
-
+  // ========= Get Resource via search ==========
+  app.get("/api/resources/:search", function (req, res) {
+    db.Resource.findAll({
+      where: {
+        [Op.or]: [
+          {
+            technology: {
+              [Op.like]: "%" + req.params.search + "%"
+            }
+          },
+          {
+            tag: {
+              [Op.like]: "%" + req.params.search + "%"
+            }
+          },
+          {
+            description: {
+              [Op.like]: "%" + req.params.search + "%"
+            }
+          }
+        ]
+      }
+    }).then(function (
+      results
+    ) {
+      console.log(res);
+      res.json(results);
+    });
+  });
 
   // ======== POST NEW USER ========
   app.post('/api/newuser', function (req, res) {

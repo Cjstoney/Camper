@@ -16,6 +16,7 @@ import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import ResourceTypePage from './pages/ResourceTypePage';
 import SavedPage from "./pages/SavedPage";
+import SearchPage from "./pages/SearchPage";
 
 //hi guys, please keep all fo this below. its how we renger the "non-logged-in page" without 
 //having to render ALL of these components on every single page (ie, LoginPage, ResourcesPage, etc. ty-Sam)
@@ -29,7 +30,7 @@ function App() {
         <Route exact path="/signup" component={SignUpPage} />
         <Route path="/resources/:ResourceTypePage" component={ResourceTypePage} />
         <Route path="/saved" component={SavedPage} />
-
+        <Route path="/search" component={SearchPage} />
         <Route exact path="/" component={Navbar} />
         <Route exact path="/" component={Header} />
         <Route exact path="/" component={About} />
