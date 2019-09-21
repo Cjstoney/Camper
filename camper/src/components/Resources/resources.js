@@ -10,8 +10,6 @@ function Resources() {
      <h2 className="text-center mt-0">Resources</h2>
      <hr className="divider my-4"></hr>
 
-    <br></br>
-
     <section>
     <div className="container-fluid p-0">
       <div className="row no-gutters">

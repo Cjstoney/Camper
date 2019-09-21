@@ -1,6 +1,5 @@
 import React from "react";
 import "../Resources/resources.css";
-import {searchTerm} from '../../helpers/search';
 
 function Searchbar(props) {
   return (
@@ -16,7 +15,7 @@ function Searchbar(props) {
           id="search"
         />
 
-        <button type="submit" onClick={searchTerm} className="btn btn-success">
+        <button type="submit" onClick={props.searchTerm} className="btn btn-success">
           Search
         </button>
       </div>
