@@ -35,8 +35,12 @@ module.exports = function (app) {
   //======== get the saved resources ========
   app.get("/api/resources/saved", function (req, res) {
     console.log(req.body)
-    db.sequelize.query("SELECT r.id, r.technology, r.description, r.url, r.imgurl  FROM camper.User_Resources ur INNER JOIN camper.resources r ON ur.resource_id = r.id WHERE ur.user_id = 1;"
-    ).then(function (results) {
+    db.User_Resource.findAll({
+      include: [{model: db.User_Resource, as: 'r', required: true,}, ],
+      attributes: [['r.id', 'r.id'],['r.technology', 'r.technology'],['r.description', 'r.description'],['r.url', 'r.url'],['r.imgurl', 'r.imgurl']],
+      where: {[Op.and]: [{'$ur.user_id$': {[Op.eq]: 1}}]},
+      })
+      .then(function (results) {
       console.log(res)
       res.json(results)
       console.log('results', results)
