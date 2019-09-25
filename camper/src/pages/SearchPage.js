@@ -77,7 +77,7 @@ class SearchPage extends React.Component{
                     resource
                 }
 
-                <Footer />
+                
             </div>
         );
     }
