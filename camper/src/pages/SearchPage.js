@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from '../components/Navbar/navbar';
-import Footer from "../components/Footer/footer";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import './SavedPage.css'
