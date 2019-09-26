@@ -34,13 +34,13 @@ module.exports = function (app) {
 
   //======== get the saved resources ========
   app.get("/api/resources/saved", function (req, res) {
-    console.log(req.body)
-    db.sequelize.query("SELECT r.id, r.technology, r.description, r.url, r.imgurl  FROM camper.User_Resources ur INNER JOIN camper.resources r ON ur.resource_id = r.id WHERE ur.user_id = 1;"
-    ).then(function (results) {
-      console.log(res)
-      res.json(results)
-      console.log('results', results)
-    })
+    db.sequelize.query("SELECT r.id, r.technology, r.description, r.url, r.imgurl  FROM lif2wfoqiewjhmg3.User_Resources ur INNER JOIN lif2wfoqiewjhmg3.Resources r ON ur.resource_id = r.id WHERE ur.user_id = 1;"
+      )
+      .then(function (results) {
+        // console.log(res)
+        res.json(results)
+        console.log('results', results)
+      })
   })
 
   // ========= Get Resource via search ==========
@@ -82,7 +82,7 @@ module.exports = function (app) {
       password: req.body.password,
       createdAt: req.body.createdAt
     }).then(user => {
-      req.session.ser = user.dataVAlues;
+      req.session.ser = user.dataValues;
       console.log("user added")
       res.redirect('/')
     }).catch(error => {
@@ -93,7 +93,8 @@ module.exports = function (app) {
   //======= Get User =============
   app.get("/api/user/:email/:password", function (req, res) {
     console.log(req.params, 'req.body')
-    db.User.findAll({where: {email: req.params.email, password: req.params.password}
+    db.User.findAll({
+      where: { email: req.params.email, password: req.params.password }
     }).then(function (results) {
       res.json(results);
     })/*.catch(error =>{

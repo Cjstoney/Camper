@@ -30,6 +30,16 @@ Object.keys(db).forEach(function(modelName) {
     db[modelName].associate(db);
   }
 });
+// importing the models for associations
+db.User = require('../models/user')(sequelize,Sequelize);
+db.UserResource = require('../models/userresource')(sequelize,Sequelize);
+db.Resource = require('../models/resource')(sequelize,Sequelize);
+
+// trying to do  sequelize associations. Db working before attempting this
+db.User.belongsToMany(db.Resource,{through:db.UserResource});
+// db.UserResource.belongsTo(db.User);
+// db.UserResource.hasMany(db.Resource);
+db.Resource.belongsToMany(db.User, {through:db.UserResource});
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
