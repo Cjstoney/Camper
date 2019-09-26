@@ -34,19 +34,10 @@ module.exports = function (app) {
 
   //======== get the saved resources ========
   app.get("/api/resources/saved", function (req, res) {
-    db.Resource.findAll({
-      include: [{
-          model: db.User,
-      where : {
-        user_id: 1,
-    },
-    attributes : ['resource_id']
-      // include: [{
-      //   model: db.Resource,
-      //   where: {
-      //     user_id: 1
-      //   }
-      }]
+    db.UserResource.findAll({ 
+        where: {
+          user_id: 1,
+        }
     })
 
 
@@ -56,7 +47,7 @@ module.exports = function (app) {
       .then(function (results) {
         // console.log(res)
         res.json(results)
-        console.log('results', results[0].dataValues)
+        console.log('results', results)
       })
   })
 
