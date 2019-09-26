@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "root",
-    "password": "Password",
-    "database": "camper",
-    "host": "localhost",
+    "username": "x60smffjgf3t4k1d",
+    "password": "af7pfywc9p11tuqf",
+    "database": "lif2wfoqiewjhmg3",
+    "host": "s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "yrnv29gycxug6sto",
-    "password": "brhd5ex1dpbigr0e",
-    "database": "np5h2fmmdp3mq1tp",
+    "username": "x60smffjgf3t4k1d",
+    "password": "af7pfywc9p11tuqf",
+    "database": "lif2wfoqiewjhmg3",
     "host": "s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
-    "username": "yrnv29gycxug6sto",
-    "password": "brhd5ex1dpbigr0e",
-    "database": "np5h2fmmdp3mq1tp",
+    "username": "x60smffjgf3t4k1d",
+    "password": "af7pfywc9p11tuqf",
+    "database": "lif2wfoqiewjhmg3",
     "host": "s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
