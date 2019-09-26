@@ -21,4 +21,8 @@ module.exports = function(sequelize, DataTypes) {
 
     
     return User;
+
+    User.belongsToMany(Resource, { through: 'UserResource' })
+
+    // user belongss to many resources
 };
