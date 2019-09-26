@@ -40,12 +40,12 @@ Value1= () =>
       <Form name="form1">
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email Address</Form.Label>
-          <Form.Control input='true' type="email" name="emailLogin" placeholder="Enter email" />
+          <Form.Control input='true' type="email" name="emailLogin" placeholder="" />
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" name="pwLogin" placeholder="Password" />
+          <Form.Control type="password" name="pwLogin" placeholder="" />
           <Form.Text className="text-muted">
             <p><small>We'll never share your email with anyone else</small></p>
           </Form.Text>

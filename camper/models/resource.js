@@ -21,6 +21,8 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: true
       }
     });
+
+   
     return Resource;
 
     Resource.belongsToMany(User, { through: UserResource })

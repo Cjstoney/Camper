@@ -15,7 +15,7 @@ function Searchbar(props) {
           id="search"
         />
 
-        <button type="submit" onClick={props.searchTerm} className="btn btn-success">
+        <button type="submit" onClick={props.searchTerm} className="btn btn-primary">
           Search
         </button>
       </div>
