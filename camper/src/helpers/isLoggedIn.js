@@ -8,7 +8,7 @@ export const isLoggedIn = (e, history) =>{
 
     console.log('password', password , 'email', email)
 
-   axios.get(`http://localhost:3001/api/user/${email}/${password}`)
+   axios.get(`s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/api/user/${email}/${password}`)
     .then(function (response){
         console.log(response)
         console.log(history, "history")
