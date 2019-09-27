@@ -7,7 +7,7 @@ let email = document.getElementsByName('email')[0].value;
 let password = document.getElementsByName('password')[0].value;
 console.log('password', password, 'email', email, 'name', name)
 
-    axios.post('mysql://x60smffjgf3t4k1d:af7pfywc9p11tuqf@s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/lif2wfoqiewjhmg3/api/newuser', {
+    axios.post('http://localhost:3001/api/newuser', {
                 name: name,
                 email: email,
                 password: password
