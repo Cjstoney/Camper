@@ -22,7 +22,7 @@ class SearchPage extends React.Component{
     
         //console.log('search value', search);
     
-        axios.get(`s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/api/resources/${search}`)
+        axios.get(`http://localhost:3001/api/resources/${search}`)
         .then(res => {
             if (res.data.status === "error") {
                 throw new Error(res.data.message);
