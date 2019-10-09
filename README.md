@@ -3,7 +3,7 @@
 ## Purpose
 
 Camper was created for Web Development Bootcamp students who want a curated list of resources that are actually useful and have been vetted by students. 
-Camper allows students to serach and browse resources without being registered or logged in. 
+Camper allows students to search and browse resources without being registered or logged in. 
 Student who do decide to login in have the added option of saving resources in order to be able to come back to them in the future with added ease.
 
 ## Technologies Used
