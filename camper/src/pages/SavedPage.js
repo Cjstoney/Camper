@@ -20,7 +20,7 @@ class SavedPage extends React.Component{
     // Create a function that will run in her to do two seperate queries
     
     componentDidMount(){
-        axios.get("mysql://x60smffjgf3t4k1d:af7pfywc9p11tuqf@s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/lif2wfoqiewjhmg3/api/resources/saved")
+        axios.get("http://localhost:3000/saved")
         .then(res=>{
             console.log("res", res.data[0])
             this.setState({

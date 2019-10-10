@@ -5,7 +5,7 @@ const Op = Sequelize.Op;
 
 module.exports = function (app) {
   app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "mysql://x60smffjgf3t4k1d:af7pfywc9p11tuqf@s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/lif2wfoqiewjhmg3    "); // update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // update to match the domain you will make the request from
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
@@ -24,10 +24,11 @@ module.exports = function (app) {
 
   // ========= Get Specific Type Of Resource ==========
   app.get("/api/resource/:type", function (req, res) {
+    // console.log(req.params, "req.params")
     db.Resource.findAll({ where: { technology: req.params.type } }).then(function (
       results
     ) {
-      console.log(res);
+      // console.log(results);
       res.json(results);
     });
   });

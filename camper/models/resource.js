@@ -1,5 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
     const Resource = sequelize.define("Resource", {
+      resource_id:{
+        type:DataTypes.INTEGER,
+        allowNull:false,
+        primaryKey: true
+      },
       technology: {
         type: DataTypes.STRING,
         allowNull: false
