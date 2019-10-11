@@ -38,7 +38,6 @@ module.exports = function (app) {
     db.sequelize.query("SELECT r.resource_id, r.technology, r.description, r.url, r.imgurl  FROM camper.User_Resources ur INNER JOIN camper.Resources r ON ur.resource_id = r.resource_id WHERE ur.user_id = 1;"
       )
       .then(function (results) {
-        // console.log(res)
         res.json(results)
         console.log('results', results)
       })
