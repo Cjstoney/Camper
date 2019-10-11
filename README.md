@@ -33,3 +33,25 @@ Student who do decide to login in have the added option of saving resources in o
 - Once the set up of the app is complete, the user can run 'npm start' in a terminal window to start the website locally.
 - In another terminal window, the server will be started using 'node server.js', 'nodemon server.js' or the user's prefered method of starting the machine.
 - The user can now use the application in their web browser.
+
+## Images Of The Site
+### Image of the landing page
+![Home Page](/camper/public/img/readme/camperHome.png)
+### Image of Camper's mission statement
+![Camper purpose](/camper/public/img/readme/camperAbout.png)
+### Image the technologies that Camper has resources for
+![Resource Layout](/camper/public/img/readme/camperResource.png)
+### Image of where the user is directed if they click on a resource
+![Resource Results](/camper/public/img/readme/camperResourceCards.png)
+### Image of the search bar
+![Search bar](/camper/public/img/readme/camperSearchBar.png)
+### Image of the search bar results
+![Search Bar results](/camper/public/img/readme/camperSearchResults.png)
+### Image of the section about the team
+![Contact area](/camper/public/img/readme/camperUs.png)
+
+
+
+
+
+
